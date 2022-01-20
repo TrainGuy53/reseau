@@ -1,0 +1,118 @@
+	/*  < />  */
+
+body
+	{
+	background:#5fa0a0 url("https://trainguy53.github.io/reseau/fichiers/rail.png") repeat-y left top fixed;
+	margin-right:60px;
+	margin-left:60px;
+	}
+
+h1
+	{
+	color:#000000;
+	font-family:serif;
+	font-size:40px;
+	text-align:center;
+	}
+
+p
+	{
+	color:#000000;
+	font-family:bahnschrift;
+	font-size:30px;
+	font-style:normal;
+	background-color:#A9A9A9;
+	text-align:center;
+	border:3px green inset;
+	}
+
+table
+	{
+	background-color:#5fa0a0;
+	border:5px #000000 solid;
+	}
+
+th
+	{
+	color:green;
+	font-family:bahnschrift;
+	font-size:20px;
+	font-style:normal;
+    font-weight:normal;
+	text-align:center;
+	border:2px #000000 solid;
+	background-color:rgb(95, 160, 160);
+	}
+
+td
+	{
+	color:black;
+	font-family:bahnschrift;
+	font-size:20px;
+	font-style:normal;
+	text-align:center;
+	border:1px #000000 solid;
+	background-color:rgb(95, 160, 160);
+	}
+
+img
+	{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+	/*  id="_"  */
+
+#ico
+	{
+	display:inline;
+	margin-left:0;
+	margin-right:auto;
+	}
+
+#tablelang
+	{
+	background-color:#5fa0a0;
+	border:1px #000000 solid;
+	}
+
+#tdlang_b1
+	{
+	background-color:#5fa0a0;
+	font-family:bahnschrift;
+	border:0;
+	}
+
+#tdlang_b2
+	{
+	background-color:#5fa0a0;
+	font-family:bahnschrift;
+	border:0;
+	}
+
+#tdlang_i1
+	{
+	background-color:#5fa0a0;
+	border:0;
+	}
+
+#tdlang_i2
+	{
+	background-color:#5fa0a0;
+	border:0;
+	}
+
+	/*  class="_" */
+
+.locomotive
+	{
+	width:310px;
+	height:149px;
+	}
+
+.loco_v
+	{
+	width:300px;
+	height:150px;
+	}
