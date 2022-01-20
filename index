@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="CSS.css"/>
+	<title>Accueil</title>
+</head>
+<body>
+
+<h1>Accueil</h1>
+
+<p>Bienvenue sur la page d&apos;accueil de mon r&eacute;seau de train miniature.</p>
+
+<img src="C:/Users/artus/Documents/Notepad++/Réseau/reseau_fr/fichiers/TGV.gif" alt="TGV.gif" width="1024" height="72"/><br>
+
+<p>Vous trouverez ici une présentation et une description des locomotives du r&eacute;seau ainsi que les projets en cours.</p>
+
+<p><a href="C:/Users/artus/Documents/Notepad++/Réseau/reseau_fr/locomotives.html">Vers la pr&eacute;sentation des locomotives.</a><br><a href="C:/Users/artus/Documents/Notepad++/Réseau/reseau_fr/projets.html">Vers les projets.</a></p>
+
+</body>
+</html>
