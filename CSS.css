@@ -2,9 +2,10 @@
 
 body
 	{
-	background:#5fa0a0 url("https://trainguy53.github.io/reseau/fichiers/rail.png") repeat-y left top fixed;
+	background:#609f9f url("C:/Users/artus/Documents/Notepad++/Réseau/reseau_local/fichiers/rail.png") repeat-y left top fixed;
 	margin-right:60px;
 	margin-left:60px;
+	text-shadow:1px 1px 1px #ffffff;
 	}
 
 h1
@@ -28,31 +29,31 @@ p
 
 table
 	{
-	background-color:#5fa0a0;
+	background-color:#609f9f;
 	border:5px #000000 solid;
 	}
 
 th
 	{
-	color:green;
+	color:#3399ff;
 	font-family:bahnschrift;
 	font-size:20px;
 	font-style:normal;
     font-weight:normal;
 	text-align:center;
 	border:2px #000000 solid;
-	background-color:rgb(95, 160, 160);
+	background-color:#568f8f;
 	}
 
 td
 	{
-	color:black;
+	color:#000000;
 	font-family:bahnschrift;
 	font-size:20px;
 	font-style:normal;
 	text-align:center;
 	border:1px #000000 solid;
-	background-color:rgb(95, 160, 160);
+	background-color:#609f9f;
 	}
 
 img
@@ -73,33 +74,33 @@ img
 
 #tablelang
 	{
-	background-color:#5fa0a0;
+	background-color:#609f9f;
 	border:1px #000000 solid;
 	}
 
 #tdlang_b1
 	{
-	background-color:#5fa0a0;
+	background-color:#609f9f;
 	font-family:bahnschrift;
 	border:0;
 	}
 
 #tdlang_b2
 	{
-	background-color:#5fa0a0;
+	background-color:#609f9f;
 	font-family:bahnschrift;
 	border:0;
 	}
 
 #tdlang_i1
 	{
-	background-color:#5fa0a0;
+	background-color:#609f9f;
 	border:0;
 	}
 
 #tdlang_i2
 	{
-	background-color:#5fa0a0;
+	background-color:#609f9f;
 	border:0;
 	}
 
@@ -111,7 +112,19 @@ img
 	height:149px;
 	}
 
+.wagon
+	{
+	width:310px;
+	height:149px;
+	}
+
 .loco_v
+	{
+	width:300px;
+	height:150px;
+	}
+
+.wagon_v
 	{
 	width:300px;
 	height:150px;
