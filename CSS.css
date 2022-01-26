@@ -6,11 +6,12 @@ body
 		margin-right:60px;
 		margin-left:60px;
 		text-shadow:1px 1px 1px #ffffff;
+		color:#000000;
+		font-family:bahnschrift;
 	}
 
 h1
 	{
-		color:#000000;
 		font-family:serif;
 		font-size:40px;
 		text-align:center;
@@ -18,8 +19,7 @@ h1
 
 p
 	{
-		color:#000000;
-		font-family:bahnschrift;
+		
 		font-size:30px;
 		font-style:normal;
 		background-color:#A9A9A9;
@@ -36,24 +36,20 @@ table
 th
 	{
 		color:#3399ff;
-		font-family:bahnschrift;
 		font-size:20px;
 		font-style:normal;
 		font-weight:normal;
 		text-align:center;
 		border:2px #000000 solid;
-		background-color:#568f8f;
 	}
 
 td
 	{
 		color:#000000;
-		font-family:bahnschrift;
 		font-size:20px;
 		font-style:normal;
 		text-align:center;
 		border:1px #000000 solid;
-		background-color:#609f9f;
 	}
 
 img
@@ -66,7 +62,7 @@ img
 nav
 	{
 		position:sticky;
-		top:0px;
+		top:0;
 	}
 
 nav ul
@@ -89,45 +85,16 @@ nav ul::after
 
 	/*  id="_"  */
 
-#ico
+#table_reseaux
 	{
-		display:inline;
-		margin-left:0;
-		margin-right:auto;
+		border:0;
+		margin-left:150px;
 	}
 
-#tablelang
+#td_reseaux
 	{
-		background-color:#609f9f;
-		border:1px #000000 solid;
-	}
-
-#tdlang_b1
-	{
-		background-color:#609f9f;
-		font-family:bahnschrift;
 		border:0;
 	}
-
-#tdlang_b2
-	{
-		background-color:#609f9f;
-		font-family:bahnschrift;
-		border:0;
-	}
-
-#tdlang_i1
-	{
-		background-color:#609f9f;
-		border:0;
-	}
-
-#tdlang_i2
-	{
-		background-color:#609f9f;
-		border:0;
-	}
-
 	/*  class="_" */
 
 .locomotive
