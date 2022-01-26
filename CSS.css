@@ -69,6 +69,11 @@ nav
 		top:0px;
 	}
 
+nav ul
+	{
+		list-style-type:none;
+	}
+
 nav ul li
 	{
 		float:left;
