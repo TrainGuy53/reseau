@@ -1,5 +1,6 @@
 	/*  < />  */
 
+
 body
 	{
 		background:#609f9f url("./fichiers/rail.png") repeat-y left top fixed;
@@ -83,7 +84,9 @@ nav ul::after
 		clear:both;
 	}
 
+
 	/*  id="_"  */
+
 
 #table_reseaux
 	{
@@ -95,7 +98,10 @@ nav ul::after
 	{
 		border:0;
 	}
+
+
 	/*  class="_" */
+
 
 .locomotive
 	{
