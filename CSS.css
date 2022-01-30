@@ -9,20 +9,21 @@ body
 		text-shadow:1px 1px 1px #ffffff;
 		color:#000000;
 		font-family:bahnschrift;
+		font-size:30px;
+		font-style:normal;
+		font-weight:normal;
+		text-align:center;
 	}
 
 h1
 	{
 		font-family:serif;
 		font-size:40px;
-		text-align:center;
+
 	}
 
 p
 	{
-		
-		font-size:30px;
-		font-style:normal;
 		background-color:#A9A9A9;
 		text-align:center;
 		border:3px green inset;
@@ -38,9 +39,6 @@ th
 	{
 		color:#3399ff;
 		font-size:20px;
-		font-style:normal;
-		font-weight:normal;
-		text-align:center;
 		border:2px #000000 solid;
 	}
 
@@ -48,8 +46,6 @@ td
 	{
 		color:#000000;
 		font-size:20px;
-		font-style:normal;
-		text-align:center;
 		border:1px #000000 solid;
 	}
 
@@ -106,13 +102,13 @@ nav ul::after
 .locomotive
 	{
 		width:310px;
-		height:149px;
+		height:150px;
 	}
 
 .wagon
 	{
 		width:310px;
-		height:149px;
+		height:150px;
 	}
 
 .loco_v
