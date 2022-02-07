@@ -3,7 +3,7 @@
 
 body
 	{
-		background:#609f9f url("./fichiers/rail.png") repeat-y left top fixed;
+		background:#609f9f url("./fichiers/rail.png") repeat-y left top;
 		margin-right:60px;
 		margin-left:60px;
 		text-shadow:1px 1px 1px #ffffff;
@@ -25,7 +25,6 @@ h1
 p
 	{
 		background-color:#A9A9A9;
-		font-size:30px;
 		border:3px green inset;
 	}
 
@@ -44,7 +43,6 @@ th
 
 td
 	{
-		color:#000000;
 		border:1px #000000 solid;
 	}
 
@@ -100,14 +98,12 @@ nav ul::after
 
 .locomotive
 	{
-		width:305px;
-		height:150px;
+		width:100%;
 	}
 
 .wagon
 	{
-		width:300px;
-		height:150px;
+		width:100%;
 	}
 
 .reseaux_sociaux
@@ -121,4 +117,20 @@ nav ul::after
 	{
 		width:126px;
 		height:126px;
+	}
+.image
+	{
+		width:80%;
+	}
+
+.validation
+	{
+		width:6%;
+	}
+
+.menu
+	{
+		width:5%;
+		display:inline;
+		margin-bottom:-1%;
 	}
