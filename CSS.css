@@ -84,7 +84,7 @@ nav ul::after
 #table_rs
 	{
 		border:0;
-		margin-left:150px;
+		margin-left:10%;
 	}
 
 #td_rs
@@ -108,15 +108,13 @@ nav ul::after
 
 .reseaux_sociaux
 	{
-		width:126px;
-		height:126px;
+		width:50%;
 		margin-left:10%;
 	}
 
 .logo
 	{
-		width:126px;
-		height:126px;
+		width:50%;
 	}
 .image
 	{
