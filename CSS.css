@@ -96,12 +96,7 @@ nav ul::after
 	/*  class="_" */
 
 
-.locomotive
-	{
-		width:100%;
-	}
-
-.wagon
+.loco_wag
 	{
 		width:100%;
 	}
