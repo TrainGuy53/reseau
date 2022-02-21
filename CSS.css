@@ -101,6 +101,17 @@ nav ul::after
 		width:100%;
 	}
 
+.locomotive_gif
+	{
+		width:50%;
+
+	}
+.wagon_gif
+	{
+		width:80%;
+
+	}
+
 .reseaux_sociaux
 	{
 		width:50%;
