@@ -1,140 +1,175 @@
 	/*  < />  */
 
-
 body
-	{
-		background:#609f9f url("./fichiers/rail.png") repeat-y left top;
-		margin-right:60px;
-		margin-left:60px;
-		text-shadow:1px 1px 1px #ffffff;
-		color:#000000;
-		font-family:bahnschrift;
-		font-size:30px;
-		font-style:normal;
-		font-weight:normal;
-		text-align:center;
-	}
+{
+	background: #609f9f url("./fichiers/rail.png") repeat-y left top;
+	margin-right: 60px;
+	margin-left: 60px;
+	text-shadow: 1px 1px 1px #ffffff;
+	color: #000000;
+	font-family: bahnschrift;
+	font-size: 30px;
+	text-align: center;
+}
 
 h1
-	{
-		font-family:serif;
-		font-size:40px;
-
-	}
+{
+	font-family: serif;
+	font-size: 50px;
+}
 
 p
-	{
-		background-color:#A9A9A9;
-		border:3px green inset;
-	}
+{
+	background-color: #bbbbbb;
+	border: 3px #9f9f60 outset;
+	border-radius: 20px;
+	box-shadow: 3px 3px 3px #000000;
+}
+
+a
+{
+	color: #000000;
+	font-style: italic;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #9f609f;
+}
 
 table
-	{
-		background-color:#609f9f;
-		border:5px #000000 solid;
-		font-size:25px;
-	}
+{
+	background-color: #609f9f;
+	border: 3px #9f9f60 outset;
+	border-radius: 20px;
+	font-size: 25px;
+	box-shadow: 3px 3px 3px #000000;
+}
 
 th
-	{
-		color:#3366ff;
-		border:2px #000000 solid;
-	}
+{
+	color: #9f9f60;
+	border: 2px #9f9f60 outset;
+	border-radius: 15px;
+	box-shadow: 1px 1px 1px #000000;
+}
+
 
 td
-	{
-		border:1px #000000 solid;
-	}
+{
+	border: 1px #9f9f60 outset;
+	border-radius: 15px;
+	box-shadow: 1px 1px 1px #000000;
+}
 
 img
-	{
-		display:block;
-		margin-left:auto;
-		margin-right:auto;
-	}
-	
+{
+	width: 100%;
+	border-radius: 15px;
+	margin-top: 0px;
+	margin-bottom: -8px;
+}
+
 nav
-	{
-		position:sticky;
-		top:0;
-	}
+{
+	font-size: 50%;
+	background-color: #609f9f;
+	box-shadow: 3px 3px 3px #000000;
+	border-radius: 20px;
+	position: sticky;
+	top: 0px;
+}
 
-nav ul
-	{
-		list-style-type:none;
-	}
+ul
+{
+	list-style-type: none;
+}
 
-nav ul li
-	{
-		float:left;
-		width:20%;
-	}
+ul::after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
 
-nav ul::after
-	{
-		content:"";
-		display:table;
-		clear:both;
-	}
+li
+{
+	float: left;
+	width: 20%;
+}
 
-
-	/*  id="_"  */
-
-
-#table_rs
-	{
-		border:0;
-		margin-left:10%;
-	}
-
-#td_rs
-	{
-		border:0;
-	}
 
 
 	/*  class="_" */
 
-
-.loco_voi_wag
-	{
-		width:100%;
-	}
-
-.locomotive_gif
-	{
-		width:50%;
-
-	}
-.voi_wag_gif
-	{
-		width:80%;
-
-	}
-
 .reseaux_sociaux
-	{
-		width:50%;
-		margin-left:10%;
-	}
-
-.logo
-	{
-		width:50%;
-	}
-.image
-	{
-		width:80%;
-	}
+{
+	width: 50%;
+	box-shadow: 3px 3px 3px #000000;
+}
 
 .validation
-	{
-		width:6%;
-	}
+{
+	width: 5%;
+	border-radius: 0px;
+}
 
-.menu
-	{
-		width:5%;
-		display:inline;
-		margin-bottom:-1%;
-	}
+.th_reseaux_sociaux
+{
+	border: 0px;
+	box-shadow: 0px 0px 0px #000000;
+}
+
+.section
+{
+	border-radius: 0px;
+	margin-bottom: 0px;
+}
+
+	/*  id="_"  */
+
+#table_reseaux_sociaux
+{
+	border: 0px;
+	background-color: transparent;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 0px 0px #000000;
+}
+
+#logo
+{
+	width: 50%;
+	margin-bottom: 0px;
+}
+
+#tgv
+{
+	box-shadow: 3px 3px 3px #000000;
+}
+
+#temps
+{
+	width: 50%;
+	box-shadow: 3px 3px 3px #000000;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#section_gauche
+{
+	border-radius: 0px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	margin-bottom: 0px;
+}
+
+#section_droite
+{
+	border-radius: 0px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	margin-bottom: 0px;
+}
