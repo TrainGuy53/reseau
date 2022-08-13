@@ -1,4 +1,4 @@
-	/*  < />  */
+	/*  <_/>  */
 
 body
 {
@@ -44,6 +44,7 @@ table
 	border-radius: 20px;
 	font-size: 25px;
 	box-shadow: 3px 3px 3px #000000;
+	width: 100%;
 }
 
 th
@@ -72,6 +73,7 @@ img
 
 nav
 {
+	margin: 3%;
 	font-size: 50%;
 	background-color: #609f9f;
 	box-shadow: 3px 3px 3px #000000;
@@ -97,8 +99,6 @@ li
 	float: left;
 	width: 20%;
 }
-
-
 
 	/*  class="_" */
 
@@ -132,7 +132,11 @@ li
 	font-style: normal;
 }
 
-
+.vide
+{
+	border: 0px;
+	box-shadow: 0px 0px 0px;
+}
 
 	/*  id="_"  */
 
@@ -180,4 +184,16 @@ li
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
 	margin-bottom: 0px;
+}
+
+#circuit
+{
+/*	border-radius: 0px; */
+	box-shadow: 3px 3px 3px #000000;
+	width: 100%;
+}
+
+#colones
+{
+	column-count: 2;
 }
