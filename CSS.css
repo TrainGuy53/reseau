@@ -80,6 +80,7 @@ nav
 	border-radius: 20px;
 	position: sticky;
 	top: 0px;
+	opacity: 0.9;
 }
 
 ul
