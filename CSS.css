@@ -133,6 +133,12 @@ li
 	box-shadow: 0px 0px 0px;
 }
 
+.sombre
+{
+	background-color: #568F8F;
+	border: 2px #9f9f60 inset;
+}
+
 	/*  id="_"  */
 
 #table_reseaux_sociaux
