@@ -106,7 +106,7 @@ li
 .reseaux_sociaux
 {
 	width: 25%;
-	box-shadow: 0px;
+	box-shadow: 0 0 0;
 }
 
 .validation
