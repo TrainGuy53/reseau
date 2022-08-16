@@ -1,0 +1,200 @@
+	/*  <_/>  */
+
+body
+{
+	background: #609f9f url("./fichiers/rail.png") repeat-y left top;
+	margin: 5%;
+	text-shadow: 1px 1px 1px #ffffff;
+	color: #000000;
+	font-family: bahnschrift;
+	font-size: 200%;
+	text-align: center;
+}
+
+h1
+{
+	font-family: serif;
+	font-size: 50px;
+}
+
+p
+{
+	background-color: #bbbbbb;
+	border: 3px #9f9f60 outset;
+	border-radius: 20px;
+	box-shadow: 3px 3px 3px #000000;
+}
+
+a
+{
+	color: #000000;
+	font-style: italic;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #9f609f;
+}
+
+table
+{
+	background-color: #609f9f;
+	border: 3px #9f9f60 outset;
+	border-radius: 20px;
+	font-size: 25px;
+	box-shadow: 3px 3px 3px #000000;
+	width: 100%;
+}
+
+th
+{
+	color: #9f9f60;
+	border: 2px #9f9f60 outset;
+	border-radius: 15px;
+	box-shadow: 1px 1px 1px #000000;
+}
+
+
+td
+{
+	border: 1px #9f9f60 outset;
+	border-radius: 15px;
+	box-shadow: 1px 1px 1px #000000;
+}
+
+img
+{
+	width: 100%;
+	border-radius: 15px;
+	margin-top: 0px;
+	margin-bottom: -8px;
+}
+
+nav
+{
+	margin: 3%;
+	font-size: 50%;
+	background-color: #609f9f;
+	box-shadow: 3px 3px 3px #000000;
+	border-radius: 20px;
+	position: sticky;
+	top: 0px;
+	opacity: 0.9;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+ul::after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+li
+{
+	float: left;
+	width: 20%;
+}
+
+	/*  class="_" */
+
+.reseaux_sociaux
+{
+	width: 25%;
+	box-shadow: 0 0 0;
+}
+
+.validation
+{
+	width: 5%;
+	border-radius: 0px;
+}
+
+.section
+{
+	border-radius: 0px;
+	margin-bottom: 0px;
+}
+
+.uic
+{
+	color: #9f9f60;
+	font-style: normal;
+}
+
+.vide
+{
+	border: 0px;
+	box-shadow: 0px 0px 0px;
+}
+
+.sombre
+{
+	background-color: #568F8F;
+	border: 2px #9f9f60 inset;
+}
+
+	/*  id="_"  */
+
+#table_reseaux_sociaux
+{
+	border: 0px;
+	background-color: transparent;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 0px 0px #000000;
+}
+
+#logo
+{
+	width: 50%;
+	margin-bottom: 0px;
+}
+
+#tgv
+{
+	box-shadow: 3px 3px 3px #000000;
+	width: 80%;
+}
+
+#temps
+{
+	width: 50%;
+	box-shadow: 3px 3px 3px #000000;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#section_gauche
+{
+	border-radius: 0px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	margin-bottom: 0px;
+}
+
+#section_droite
+{
+	border-radius: 0px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	margin-bottom: 0px;
+}
+
+#circuit
+{
+/*	border-radius: 0px; */
+	box-shadow: 3px 3px 3px #000000;
+	width: 100%;
+}
+
+#colones
+{
+	column-count: 2;
+}
