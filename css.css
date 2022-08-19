@@ -1,4 +1,4 @@
-	/*  <_/>  */
+	/* <_/> */
 
 body
 {
@@ -101,7 +101,7 @@ li
 	width: 20%;
 }
 
-	/*  class="_" */
+	/* class="_" */
 
 .reseaux_sociaux
 {
@@ -139,7 +139,7 @@ li
 	border: 2px #9f9f60 inset;
 }
 
-	/*  id="_"  */
+	/* id="_" */
 
 #table_reseaux_sociaux
 {
@@ -189,7 +189,6 @@ li
 
 #circuit
 {
-/*	border-radius: 0px; */
 	box-shadow: 3px 3px 3px #000000;
 	width: 100%;
 }
