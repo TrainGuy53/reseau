@@ -1,5 +1,6 @@
 	/* <_/> */
 
+
 body {
 
 	background: #609f9f url("./fichiers/rail.png") repeat-y left top;
@@ -99,7 +100,7 @@ ul {
 
 }
 
-ul::after {
+ul:after {
 
 	content: "";
 	display: table;
@@ -114,7 +115,10 @@ li {
 
 }
 
+
+
 	/* class="_" */
+
 
 .reseaux_sociaux {
 
@@ -158,7 +162,23 @@ li {
 
 }
 
+
+.circuits .details, .circuits:hover .simple  {
+
+	display: none;
+
+}
+
+.circuits:hover .details {
+
+	display: block;
+
+}
+
+
+
 	/* id="_" */
+
 
 #table_reseaux_sociaux {
 
