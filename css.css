@@ -1,7 +1,7 @@
 	/* <_/> */
 
-body
-{
+body {
+
 	background: #609f9f url("./fichiers/rail.png") repeat-y left top;
 	margin: 5%;
 	text-shadow: 1px 1px 1px #ffffff;
@@ -9,70 +9,79 @@ body
 	font-family: bahnschrift;
 	font-size: 200%;
 	text-align: center;
+
 }
 
-h1
-{
+h1 {
+
 	font-family: serif;
 	font-size: 50px;
+
 }
 
-p
-{
+p {
+
 	background-color: #bbbbbb;
 	border: 3px #9f9f60 outset;
 	border-radius: 20px;
 	box-shadow: 3px 3px 3px #000000;
+
 }
 
-a
-{
+a {
+
 	color: #000000;
 	font-style: italic;
 	text-decoration: none;
+
 }
 
-a:hover
-{
+a:hover {
+
 	color: #9f609f;
+
 }
 
-table
-{
+table {
+
 	background-color: #609f9f;
 	border: 3px #9f9f60 outset;
 	border-radius: 20px;
 	font-size: 25px;
 	box-shadow: 3px 3px 3px #000000;
 	width: 100%;
+
 }
 
-th
-{
+th {
+
 	color: #9f9f60;
 	border: 2px #9f9f60 outset;
 	border-radius: 15px;
 	box-shadow: 1px 1px 1px #000000;
+
 }
 
 
-td
-{
+td {
+
 	border: 1px #9f9f60 outset;
 	border-radius: 15px;
 	box-shadow: 1px 1px 1px #000000;
+
 }
 
-img
-{
+img {
+
 	width: 100%;
 	border-radius: 15px;
 	margin-top: 0px;
 	margin-bottom: -8px;
+
 }
 
-nav
-{
+nav {
+
 	margin: 3%;
 	font-size: 50%;
 	background-color: #609f9f;
@@ -81,119 +90,137 @@ nav
 	position: sticky;
 	top: 0px;
 	opacity: 0.9;
+
 }
 
-ul
-{
+ul {
+
 	list-style-type: none;
+
 }
 
-ul::after
-{
+ul::after {
+
 	content: "";
 	display: table;
 	clear: both;
+
 }
 
-li
-{
+li {
+
 	float: left;
 	width: 20%;
+
 }
 
 	/* class="_" */
 
-.reseaux_sociaux
-{
+.reseaux_sociaux {
+
 	width: 25%;
 	box-shadow: 0 0 0;
+
 }
 
-.validation
-{
+.validation {
+
 	width: 5%;
 	border-radius: 0px;
+
 }
 
-.section
-{
+.section {
+
 	border-radius: 0px;
 	margin-bottom: 0px;
+
 }
 
-.uic
-{
+.uic {
+
 	color: #9f9f60;
 	font-style: normal;
+
 }
 
-.vide
-{
+.vide {
+
 	border: 0px;
 	box-shadow: 0px 0px 0px;
+
 }
 
-.sombre
-{
+.sombre {
+
 	background-color: #568F8F;
 	border: 2px #9f9f60 inset;
+
 }
 
 	/* id="_" */
 
-#table_reseaux_sociaux
-{
+#table_reseaux_sociaux {
+
 	border: 0px;
 	background-color: transparent;
 	margin-left: auto;
 	margin-right: auto;
 	box-shadow: 0px 0px 0px #000000;
+
 }
 
-#logo
-{
+#logo {
+
 	width: 50%;
 	margin-bottom: 0px;
+
 }
 
-#tgv
-{
+#tgv {
+
 	box-shadow: 3px 3px 3px #000000;
 	width: 80%;
+
 }
 
-#temps
-{
+#temps {
+
 	width: 50%;
 	box-shadow: 3px 3px 3px #000000;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+
 }
 
-#section_gauche
-{
+#section_gauche {
+
 	border-radius: 0px;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
 	margin-bottom: 0px;
+
 }
 
-#section_droite
-{
+#section_droite {
+
 	border-radius: 0px;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
 	margin-bottom: 0px;
+
 }
 
-#circuit
-{
+#circuit {
+
 	box-shadow: 3px 3px 3px #000000;
 	width: 100%;
+
 }
 
-#colones
-{
+#colones {
+
 	column-count: 2;
+
 }
