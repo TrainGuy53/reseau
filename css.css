@@ -1,9 +1,9 @@
-	/* <_/> */
+	/* <.../> */
 
 
 body {
 
-	background: #609f9f url("./fichiers/rail.png") repeat-y left top;
+	background: #609f9f url("fichiers/rail.png") repeat-y left top;
 	margin: 5%;
 	text-shadow: 1px 1px 1px #ffffff;
 	color: #000000;
@@ -16,7 +16,7 @@ body {
 h1 {
 
 	font-family: serif;
-	font-size: 50px;
+	font-size: 200%;
 
 }
 
@@ -112,15 +112,16 @@ li {
 
 	float: left;
 	width: 20%;
+	margin-top: 1%;
 
 }
 
 
 
-	/* class="_" */
+	/* class="..." */
 
 
-.reseaux_sociaux {
+.reseauxSociaux {
 
 	width: 25%;
 	box-shadow: 0 0 0;
@@ -134,13 +135,6 @@ li {
 
 }
 
-.section {
-
-	border-radius: 0px;
-	margin-bottom: 0px;
-
-}
-
 .uic {
 
 	color: #9f9f60;
@@ -148,7 +142,7 @@ li {
 
 }
 
-.vide {
+.sansBords {
 
 	border: 0px;
 	box-shadow: 0px 0px 0px;
@@ -157,30 +151,75 @@ li {
 
 .sombre {
 
-	background-color: #568F8F;
+	background-color: #568f8f;
 	border: 2px #9f9f60 inset;
 
 }
 
 
-.circuits .details, .circuits:hover .simple {
+.plan .detaile, .plan:hover .simple {
 
 	display: none;
 
 }
 
-.circuits:hover .details {
+.plan:hover .detaile {
 
 	display: block;
 
 }
 
+.clairSombre {
+
+	font-size: 150%;
 
 
-	/* id="_" */
+}
+
+.clairSombre input {
+
+	width: 0px;
+
+}
+
+.clairSombre label {
+
+	padding: 4px 16px;
+	transition: all 0.1s ease-in-out;
+
+}
+
+.clairSombre label:first-of-type {
+
+	border-radius: 20px 20px 0 0;
+
+}
+
+.clairSombre label:last-of-type {
+
+	border-radius: 0 0 20px 20px;
+
+}
+
+.clairSombre label:hover {
+
+	cursor: pointer;
+
+}
+
+.clairSombre input:checked + label {
+
+	background-color: #9f9f60;
+	font-weight: bold;
+
+}
 
 
-#table_reseaux_sociaux {
+
+	/* id="..." */
+
+
+#tableReseauxSociaux {
 
 	border: 0px;
 	background-color: transparent;
@@ -193,7 +232,7 @@ li {
 #logo {
 
 	width: 50%;
-	margin-bottom: 0px;
+	margin-top: -4%;
 
 }
 
@@ -214,7 +253,7 @@ li {
 
 }
 
-#section_gauche {
+#sectionGauche {
 
 	border-radius: 0px;
 	border-top-left-radius: 20px;
@@ -223,7 +262,14 @@ li {
 
 }
 
-#section_droite {
+#sectionMilieu {
+
+	border-radius: 0px;
+	margin-bottom: 0px;
+
+}
+
+#sectionDroite {
 
 	border-radius: 0px;
 	border-top-right-radius: 20px;
@@ -233,6 +279,13 @@ li {
 }
 
 #circuit {
+
+	box-shadow: 3px 3px 3px #000000;
+	width: 100%;
+
+}
+
+#details {
 
 	box-shadow: 3px 3px 3px #000000;
 	width: 100%;

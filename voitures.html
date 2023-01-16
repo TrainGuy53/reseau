@@ -2,8 +2,9 @@
 <html lang = "fr">
 <head>
 	<meta charset = "UTF-8">
-	<link rel = "stylesheet" href = "./css.css">
-	<link rel = "shortcut icon" href = "./fichiers/icones/voitures.png">
+	<link rel = "stylesheet" href = "css.css">
+	<link rel = "shortcut icon" href = "fichiers/icones/voitures.png">
+	<script type = "text/javascript" src = "js.js"></script>
 	<title>
 		Voitures
 	</title>
@@ -14,27 +15,36 @@
 <ul>
 
 <li>
-	<a id = "a_logo" href = "./index.html">
-		<img id = "logo" src = "./fichiers/icones/train_guy.png" alt = "Accueil">
+	<a href = "index.html">
+		<img id = "logo" src = "fichiers/icones/trainGuy53.png" alt = "Accueil">
 	</a>
 </li>
 <li>
-	<a href = "./locomotives.html">
-		<img id = "section_gauche" src = "./fichiers/icones/locomotives.gif" alt = "Locomotives">
-		Locmotives
+	<a href = "locomotives.html">
+		<img id = "sectionGauche" src = "fichiers/icones/locomotivesClair.png" alt = "Locomotives">
+		Locomotives
 	</a>
 </li>
 <li>
-	<a href = "./voitures.html">
-		<img class = "section" src = "./fichiers/icones/voitures.gif" alt = "Voitures">
+	<a href = "voitures.html">
+		<img id = "sectionMilieu" class = "section" src = "fichiers/icones/voituresClair.png" alt = "Voitures">
 		Voitures
 	</a>
 </li>
 <li>
-	<a href = "./wagons.html">
-		<img id = "section_droite" src = "./fichiers/icones/wagons.gif" alt = "Wagons">
+	<a href = "wagons.html">
+		<img id = "sectionDroite" src = "fichiers/icones/wagonsClair.png" alt = "Wagons">
 		Wagons
 	</a>
+</li>
+<li>
+	<div class = "clairSombre">
+		<input type = "radio" id = "radio-one" name = "switch-one" onclick = "clair()" checked/>
+		<label for = "radio-one">&#9788;</label>
+		<br>
+		<input type = "radio" id = "radio-two" name = "switch-one" onclick = "sombre()"/>
+		<label for = "radio-two">&#9790;</label>
+	</div>
 </li>
 
 </ul>
@@ -91,14 +101,14 @@
 	</tr>
 	<tr>
 		<th rowspan = "2">Images</th>
-		<td class = "sombre"><img src = "./fichiers/voitures/b10.jpg" alt = "B10"></td>
-		<td><img src = "./fichiers/voitures/capitole_a7d.jpg" alt = "A7D Capitole"></td>
-		<td class = "sombre"><img src = "./fichiers/voitures/capitole_a9.jpg" alt = "A7D Capitole"></td>
+		<td class = "sombre"><img src = "fichiers/voitures/b10.jpg" alt = "B10"></td>
+		<td><img src = "fichiers/voitures/capitole_a7d.jpg" alt = "A7D Capitole"></td>
+		<td class = "sombre"><img src = "fichiers/voitures/capitole_a9.jpg" alt = "A7D Capitole"></td>
 	</tr>
 	<tr>
-		<td class = "sombre"><img src = "./fichiers/voitures/b10_v.jpg" alt = "B10"></td>
-		<td><img src = "./fichiers/voitures/capitole_a7d_v.jpg" alt = "A7D Capitole"></td>
-		<td class = "sombre"><img src = "./fichiers/voitures/capitole_a9_v.jpg" alt = "A7D Capitole"></td>
+		<td class = "sombre"><img src = "fichiers/voitures/b10_v.jpg" alt = "B10"></td>
+		<td><img src = "fichiers/voitures/capitole_a7d_v.jpg" alt = "A7D Capitole"></td>
+		<td class = "sombre"><img src = "fichiers/voitures/capitole_a9_v.jpg" alt = "A7D Capitole"></td>
 	</tr>
 	<tr>
 		<th>Marques</th>
@@ -148,14 +158,14 @@
 	</tr>
 	<tr>
 		<th class = "sombre" rowspan = "2">Images</th>
-		<td><img src = "./fichiers/voitures/capitole_restaurant.jpg" alt = "Restaurant Capitole"></td>
-		<td class = "sombre"><img src = "./fichiers/voitures/ciwl_bagages.jpg" alt = "Fourgon CIWL"></td>
-		<td><img src = "./fichiers/voitures/ciwl_lit_1.jpg" alt = "Lit CIWL"></td>
+		<td><img src = "fichiers/voitures/capitole_restaurant.jpg" alt = "Restaurant Capitole"></td>
+		<td class = "sombre"><img src = "fichiers/voitures/ciwl_bagages.jpg" alt = "Fourgon CIWL"></td>
+		<td><img src = "fichiers/voitures/ciwl_lit_1.jpg" alt = "Lit CIWL"></td>
 	</tr>
 	<tr>
-		<td><img src = "./fichiers/voitures/capitole_restaurant_v.jpg" alt = "Restaurant Capitole"></td>
-		<td class = "sombre"><img src = "./fichiers/voitures/ciwl_bagages_v.jpg" alt = "Fourgon CIWL"></td>
-		<td><img src = "./fichiers/voitures/ciwl_lit_v.jpg" alt = "Lit CIWL"></td>
+		<td><img src = "fichiers/voitures/capitole_restaurant_v.jpg" alt = "Restaurant Capitole"></td>
+		<td class = "sombre"><img src = "fichiers/voitures/ciwl_bagages_v.jpg" alt = "Fourgon CIWL"></td>
+		<td><img src = "fichiers/voitures/ciwl_lit_v.jpg" alt = "Lit CIWL"></td>
 	</tr>
 	<tr>
 		<th class = "sombre">Marques</th>
@@ -200,14 +210,14 @@
 	</tr>
 	<tr>
 		<th rowspan = "2">Images</th>
-		<td class = "sombre"><img src = "./fichiers/voitures/ciwl_lit_2.jpg" alt = "Lit CIWL"></td>
-		<td><img src = "./fichiers/voitures/ciwl_pullman.jpg" alt = "Pullman CIWL"></td>
-		<td class = "sombre"><img src = "./fichiers/voitures/ciwl_restaurant.jpg" alt = "Restaurant CIWL"></td>
+		<td class = "sombre"><img src = "fichiers/voitures/ciwl_lit_2.jpg" alt = "Lit CIWL"></td>
+		<td><img src = "fichiers/voitures/ciwl_pullman.jpg" alt = "Pullman CIWL"></td>
+		<td class = "sombre"><img src = "fichiers/voitures/ciwl_restaurant.jpg" alt = "Restaurant CIWL"></td>
 	</tr>
 	<tr>
-		<td class = "sombre"><img src = "./fichiers/voitures/ciwl_lit_v.jpg" alt = "Lit CIWL"></td>
-		<td><img src = "./fichiers/voitures/ciwl_pullman_v.jpg" alt = "Pullman CIWL"></td>
-		<td class = "sombre"><img src = "./fichiers/voitures/ciwl_restaurant_v.jpg" alt = "Restaurant CIWL"></td>
+		<td class = "sombre"><img src = "fichiers/voitures/ciwl_lit_v.jpg" alt = "Lit CIWL"></td>
+		<td><img src = "fichiers/voitures/ciwl_pullman_v.jpg" alt = "Pullman CIWL"></td>
+		<td class = "sombre"><img src = "fichiers/voitures/ciwl_restaurant_v.jpg" alt = "Restaurant CIWL"></td>
 	</tr>
 	<tr>
 		<th>Marques</th>
@@ -252,14 +262,14 @@
 	</tr>
 	<tr>
 		<th class = "sombre" rowspan = "2">Images</th>
-		<td><img src = "./fichiers/voitures/dev_ao_a8.jpg" alt = "DEV AO A8 myfi"></td>
-		<td class = "sombre"><img src = "./fichiers/voitures/dev_inox_a8.jpg" alt = "DEV Inox A8"></td>
-		<td><img src = "./fichiers/voitures/tee_a4dtux.jpg" alt = "A4Dtux TEE"></td>
+		<td><img src = "fichiers/voitures/dev_ao_a8.jpg" alt = "DEV AO A8 myfi"></td>
+		<td class = "sombre"><img src = "fichiers/voitures/dev_inox_a8.jpg" alt = "DEV Inox A8"></td>
+		<td><img src = "fichiers/voitures/tee_a4dtux.jpg" alt = "A4Dtux TEE"></td>
 	</tr>
 	<tr>
-		<td><img src = "./fichiers/voitures/dev_ao_a8_v.jpg" alt = "DEV AO A8 myfi"></td>
-		<td class = "sombre"><img src = "./fichiers/voitures/dev_inox_a8_v.jpg" alt = "DEV Inox A8"></td>
-		<td><img src = "./fichiers/voitures/tee_a4dtux_v.jpg" alt = "A4Dtux TEE"></td>
+		<td><img src = "fichiers/voitures/dev_ao_a8_v.jpg" alt = "DEV AO A8 myfi"></td>
+		<td class = "sombre"><img src = "fichiers/voitures/dev_inox_a8_v.jpg" alt = "DEV Inox A8"></td>
+		<td><img src = "fichiers/voitures/tee_a4dtux_v.jpg" alt = "A4Dtux TEE"></td>
 	</tr>
 	<tr>
 		<th class = "sombre">Marques</th>
@@ -314,14 +324,14 @@
 	</tr>
 	<tr>
 		<th rowspan = "2">Images</th>
-		<td class = "sombre"><img src = "./fichiers/voitures/tee_a8u.jpg" alt = "A8u TEE"></td>
-		<td><img src = "./fichiers/voitures/ten_mu.jpg" alt = "MU TEN"></td>
-		<td class = "sombre"><img src = "./fichiers/voitures/restaurant.jpg" alt = "Restaurant"></td>
+		<td class = "sombre"><img src = "fichiers/voitures/tee_a8u.jpg" alt = "A8u TEE"></td>
+		<td><img src = "fichiers/voitures/ten_mu.jpg" alt = "MU TEN"></td>
+		<td class = "sombre"><img src = "fichiers/voitures/restaurant.jpg" alt = "Restaurant"></td>
 	</tr>
 	<tr>
-		<td class = "sombre"><img src = "./fichiers/voitures/tee_a8u_v.jpg" alt = "A8u TEE"></td>
-		<td><img src = "./fichiers/voitures/ten_mu_v.jpg" alt = "MU TEN"></td>
-		<td class = "sombre"><img src = "./fichiers/voitures/restaurant_v.jpg" alt = "Restaurant"></td>
+		<td class = "sombre"><img src = "fichiers/voitures/tee_a8u_v.jpg" alt = "A8u TEE"></td>
+		<td><img src = "fichiers/voitures/ten_mu_v.jpg" alt = "MU TEN"></td>
+		<td class = "sombre"><img src = "fichiers/voitures/restaurant_v.jpg" alt = "Restaurant"></td>
 	</tr>
 	<tr>
 		<th>Marques</th>
@@ -344,56 +354,56 @@
 		<th class = "sombre">Voitures</th>
 		<th>Voiture-Lit T2</th>
 		<th class = "sombre">Mark 1 Fourgon</th>
-		<th class = "vide"></th>
+		<th class = "sansBords"></th>
 	</tr>
 	<tr>
 		<th class = "sombre">Compagnie</th>
 		<td>Compagnie Internationale des Wagons-Lits</td>
 		<td class = "sombre">SNCF</td>
-		<td class = "vide"></td>
+		<td class = "sansBords"></td>
 	</tr>
 	<tr>
 		<th class = "sombre">Livr&eacute;e</th>
 		<td>CIWL</td>
 		<td class = "sombre">Rouge</td>
-		<td class = "vide"></td>
+		<td class = "sansBords"></td>
 	</tr>
 	<tr>
 		<th class = "sombre">N&deg; de s&eacute;rie</th>
 		<td>CIWL &mdash; 5027</td>
 		<td class = "sombre">? &mdash; 34060</td>
-		<td class = "vide"></td>
+		<td class = "sansBords"></td>
 	</tr>
 	<tr>
 		<th class = "sombre" rowspan = "2">Images</th>
-		<td><img src = "./fichiers/voitures/ciwl_lit_3.jpg" alt = "Lit CIWL"></td>
-		<td class = "sombre"><img src = "./fichiers/voitures/fourgon.jpg" alt = "Fourgon"></td>
-		<td class = "vide"></td>
+		<td><img src = "fichiers/voitures/ciwl_lit_3.jpg" alt = "Lit CIWL"></td>
+		<td class = "sombre"><img src = "fichiers/voitures/fourgon.jpg" alt = "Fourgon"></td>
+		<td class = "sansBords"></td>
 	</tr>
 	<tr>
-		<td><img src = "./fichiers/voitures/ciwl_lit_v.jpg" alt = "Lit CIWL"></td>
-		<td class = "sombre"><img src = "./fichiers/voitures/fourgon_v.jpg" alt = "Fourgon"></td>
-		<td class = "vide"></td>
+		<td><img src = "fichiers/voitures/ciwl_lit_v.jpg" alt = "Lit CIWL"></td>
+		<td class = "sombre"><img src = "fichiers/voitures/fourgon_v.jpg" alt = "Fourgon"></td>
+		<td class = "sansBords"></td>
 	</tr>
 	<tr>
 		<th class = "sombre">Marques</th>
 		<td>Troby</td>
 		<td class = "sombre"><a href = "https://fr.jouef.com/" target = "_blank">Jouef</a></td>
-		<td class = "vide"></td>
+		<td class = "sansBords"></td>
 	</tr>
 	<tr>
 		<th class = "sombre">Nombre de voitures</th>
 		<td>1</td>
 		<td class = "sombre">1</td>
-		<td class = "vide"></td>
+		<td class = "sansBords"></td>
 	</tr>
 </table>
 
 <a href = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2Fcss.css" target = "_blank">
-	<img class = "validation" src = "./fichiers/validation/css.png" alt = "CSS Valide !">
+	<img class = "validation" src = "fichiers/validation/css.png" alt = "CSS Valide !">
 </a>
 <a href = "https://validator.w3.org/nu/?doc=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2Fvoitures.html" target = "_blank">
-	<img class = "validation" src = "./fichiers/validation/html.png" alt = "HTML Valide !">
+	<img class = "validation" src = "fichiers/validation/html.png" alt = "HTML Valide !">
 </a>
 
 </body>

@@ -2,8 +2,9 @@
 <html lang = "fr">
 <head>
 	<meta charset = "UTF-8">
-	<link rel = "stylesheet" href = "./css.css">
-	<link rel = "shortcut icon" href = "./fichiers/icones/accueil.png">
+	<link rel = "stylesheet" href = "css.css">
+	<link rel = "shortcut icon" href = "fichiers/icones/accueil.png">
+	<script type = "text/javascript" src = "js.js"></script>
 	<title>
 		Accueil
 	</title>
@@ -14,27 +15,36 @@
 <ul>
 
 <li>
-	<a id = "a_logo" href = "./index.html">
-		<img id = "logo" src = "./fichiers/icones/train_guy.png" alt = "Accueil">
+	<a href = "index.html">
+		<img id = "logo" src = "fichiers/icones/trainGuy53.png" alt = "Accueil">
 	</a>
 </li>
 <li>
-	<a href = "./locomotives.html">
-		<img id = "section_gauche" src = "./fichiers/icones/locomotives.gif" alt = "Locomotives">
-		Locmotives
+	<a href = "locomotives.html">
+		<img id = "sectionGauche" src = "fichiers/icones/locomotivesClair.png" alt = "Locomotives">
+		Locomotives
 	</a>
 </li>
 <li>
-	<a href = "./voitures.html">
-		<img class = "section" src = "./fichiers/icones/voitures.gif" alt = "Voitures">
+	<a href = "voitures.html">
+		<img id = "sectionMilieu" class = "section" src = "fichiers/icones/voituresClair.png" alt = "Voitures">
 		Voitures
 	</a>
 </li>
 <li>
-	<a href = "./wagons.html">
-		<img id = "section_droite" src = "./fichiers/icones/wagons.gif" alt = "Wagons">
+	<a href = "wagons.html">
+		<img id = "sectionDroite" src = "fichiers/icones/wagonsClair.png" alt = "Wagons">
 		Wagons
 	</a>
+</li>
+<li>
+	<div class = "clairSombre">
+		<input type = "radio" id = "radio-one" name = "switch-one" onclick = "indexClair()" checked/>
+		<label for = "radio-one">&#9788;</label>
+		<br>
+		<input type = "radio" id = "radio-two" name = "switch-one" onclick = "indexSombre()"/>
+		<label for = "radio-two">&#9790;</label>
+	</div>
 </li>
 
 </ul>
@@ -49,7 +59,7 @@
 	Ce site &agrave; &eacute;t&eacute; cr&eacute;&eacute; par <a href = "https://www.instagram.com/train_guy_53/" target = "_blank">Train Guy 53</a>.
 </p>
 
-<img id = "tgv" src = "./fichiers/tgv.gif" alt = "tgv">
+<img id = "tgv" src = "fichiers/tgvClair.gif" alt = "tgv">
 
 <p>
 	Vous trouverez ici une pr&eacute;sentation et une description des locomotives, voitures et wagons du r&eacute;seau.
@@ -59,12 +69,12 @@
 	<p>
 		Voil&agrave; un plan simplifi&eacute; de mon circuit, il y a deux boucles ind&eacute;pandantes, un pont, un croisement et des voies de garage (qui n&apos;y figurent pas).
 	</p>
-	<div class = "circuits">
+	<div class = "plan">
 		<div class = "simple">
-			<img class = "circuit" src = "fichiers/circuit.png" alt = "Circuit simplifié">
+			<img id = "circuit" src = "fichiers/circuits/circuitClair.png" alt = "Circuit simplifié">
 		</div>
-		<div class = "details">
-			<img class = "circuit" src = "fichiers/details.png" alt = "Circuit détaillé">
+		<div class = "detaile">
+			<img id = "details" src = "fichiers/circuits/detailsClairs.png" alt = "Circuit détaillé">
 		</div>
 	</div>
 </div>
@@ -73,29 +83,44 @@
 	&darr; Suivez moi sur les r&eacute;seaux &darr;
 </p>
 
-<table id = "table_reseaux_sociaux">
+<table id = "tableReseauxSociaux">
 	<tr>
-		<th class = "vide">
+		<th class = "sansBords">
 			<a href = "https://www.instagram.com/train_guy_53/" target = "_blank">
-				<img class = "reseaux_sociaux" src = "./fichiers/reseaux_sociaux/instagram.png" alt = "Instagram">
+				<img class = "reseauxSociaux" src = "fichiers/reseauxSociaux/instagram.png" alt = "Instagram">
+				<br>
+				&commat;train_guy_53
 			</a>
 		</th>
-		<th class = "vide">
-			@train_guy_53
+		<th class = "sansBords">
+			<a href = "https://www.youtube.com/@trainguy53" target = "_blank">
+				<img class = "reseauxSociaux" src = "fichiers/reseauxSociaux/youtube.png" alt = "YouTube">
+				<br>
+				&commat;trainguy53
+			</a>
 		</th>
-		<th class = "vide">
-			<a href = "https://www.facebook.com/train.guy.53/" target = "_blank">
-				<img class = "reseaux_sociaux" src = "./fichiers/reseaux_sociaux/facebook.png" alt = "Facebook">
+		<th class = "sansBords">
+			<a href = "https://www.facebook.com/trainguy53/" target = "_blank">
+				<img class = "reseauxSociaux" src = "fichiers/reseauxSociaux/facebook.png" alt = "Facebook">
+				<br>
+				&commat;trainguy53
+			</a>
+		</th>
+		<th class = "sansBords">
+			<a href = "https://www.pinterest.fr/trainguy53/" target = "_blank">
+				<img class = "reseauxSociaux" src = "fichiers/reseauxSociaux/pinterest.png" alt = "Pinterest">
+				<br>
+				&commat;trainguy53
 			</a>
 		</th>
 	</tr>
 </table>
 
 <a href = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2Fcss.css" target = "_blank">
-	<img class = "validation" src = "./fichiers/validation/css.png" alt = "CSS Valide !">
+	<img class = "validation" src = "fichiers/validation/css.png" alt = "CSS Valide !">
 </a>
 <a href = "https://validator.w3.org/nu/?doc=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2Findex.html" target = "_blank">
-	<img class = "validation" src = "./fichiers/validation/html.png" alt = "HTML Valide !">
+	<img class = "validation" src = "fichiers/validation/html.png" alt = "HTML Valide !">
 </a>
 
 </body>

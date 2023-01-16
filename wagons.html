@@ -2,8 +2,9 @@
 <html lang = "fr">
 <head>
 	<meta charset = "UTF-8">
-	<link rel = "stylesheet" href = "./css.css">
-	<link rel = "shortcut icon" href = "./fichiers/icones/wagons.png">
+	<link rel = "stylesheet" href = "css.css">
+	<link rel = "shortcut icon" href = "fichiers/icones/wagons.png">
+	<script type = "text/javascript" src = "js.js"></script>
 	<title>
 		Wagons
 	</title>
@@ -14,27 +15,36 @@
 <ul>
 
 <li>
-	<a id = "a_logo" href = "./index.html">
-		<img id = "logo" src = "./fichiers/icones/train_guy.png" alt = "Accueil">
+	<a href = "index.html">
+		<img id = "logo" src = "fichiers/icones/trainGuy53.png" alt = "Accueil">
 	</a>
 </li>
 <li>
-	<a href = "./locomotives.html">
-		<img id = "section_gauche" src = "./fichiers/icones/locomotives.gif" alt = "Locomotives">
-		Locmotives
+	<a href = "locomotives.html">
+		<img id = "sectionGauche" src = "fichiers/icones/locomotivesClair.png" alt = "Locomotives">
+		Locomotives
 	</a>
 </li>
 <li>
-	<a href = "./voitures.html">
-		<img class = "section" src = "./fichiers/icones/voitures.gif" alt = "Voitures">
+	<a href = "voitures.html">
+		<img id = "sectionMilieu" class = "section" src = "fichiers/icones/voituresClair.png" alt = "Voitures">
 		Voitures
 	</a>
 </li>
 <li>
-	<a href = "./wagons.html">
-		<img id = "section_droite" src = "./fichiers/icones/wagons.gif" alt = "Wagons">
+	<a href = "wagons.html">
+		<img id = "sectionDroite" src = "fichiers/icones/wagonsClair.png" alt = "Wagons">
 		Wagons
 	</a>
+</li>
+<li>
+	<div class = "clairSombre">
+		<input type = "radio" id = "radio-one" name = "switch-one" onclick = "clair()" checked/>
+		<label for = "radio-one">&#9788;</label>
+		<br>
+		<input type = "radio" id = "radio-two" name = "switch-one" onclick = "sombre()"/>
+		<label for = "radio-two">&#9790;</label>
+	</div>
 </li>
 
 </ul>
@@ -63,14 +73,14 @@
 	</tr>
 	<tr>
 		<th rowspan = "2">Images</th>
-		<td class = "sombre"><img src = "./fichiers/wagons/voiture_grand_2bg.jpg" alt = "Transport d&apos;automobiles"></td>
-		<td><img src = "./fichiers/wagons/citerne_1bg.jpg" alt = "Citerne &agrave; essieux"></td>
-		<td class = "sombre"><img src = "./fichiers/wagons/citerne_2bg.jpg" alt = "Citerne &agrave; bogies"></td>
+		<td class = "sombre"><img src = "fichiers/wagons/voiture_grand_2bg.jpg" alt = "Transport d&apos;automobiles"></td>
+		<td><img src = "fichiers/wagons/citerne_1bg.jpg" alt = "Citerne &agrave; essieux"></td>
+		<td class = "sombre"><img src = "fichiers/wagons/citerne_2bg.jpg" alt = "Citerne &agrave; bogies"></td>
 	</tr>
 	<tr>
-		<td class = "sombre"><img src = "./fichiers/wagons/voiture_grand_2bg_v.jpg" alt = "Transport d&apos;automobiles"></td>
-		<td><img src = "./fichiers/wagons/citerne_1bg_v.jpg" alt = "Citerne &agrave; essieux"></td>
-		<td class = "sombre"><img src = "./fichiers/wagons/citerne_2bg_v.jpg" alt = "Citerne &agrave; bogies"></td>
+		<td class = "sombre"><img src = "fichiers/wagons/voiture_grand_2bg_v.jpg" alt = "Transport d&apos;automobiles"></td>
+		<td><img src = "fichiers/wagons/citerne_1bg_v.jpg" alt = "Citerne &agrave; essieux"></td>
+		<td class = "sombre"><img src = "fichiers/wagons/citerne_2bg_v.jpg" alt = "Citerne &agrave; bogies"></td>
 	</tr>
 	<tr>
 		<th>Marques</th>
@@ -103,14 +113,14 @@
 	</tr>
 	<tr>
 		<th class = "sombre" rowspan = "2">Images</th>
-		<td><img src = "./fichiers/wagons/citerne_grand_1bg.jpg" alt = "Grande citerne"></td>
-		<td class = "sombre"><img src = "./fichiers/wagons/couvert_1bg.jpg" alt = "Tombereau &agrave; toit coulissant"></td>
-		<td><img src = "./fichiers/wagons/cuve_1bg.jpg" alt = "Silo"></td>
+		<td><img src = "fichiers/wagons/citerne_grand_1bg.jpg" alt = "Grande citerne"></td>
+		<td class = "sombre"><img src = "fichiers/wagons/couvert_1bg.jpg" alt = "Tombereau &agrave; toit coulissant"></td>
+		<td><img src = "fichiers/wagons/cuve_1bg.jpg" alt = "Silo"></td>
 	</tr>
 	<tr>
-		<td><img src = "./fichiers/wagons/citerne_grand_1bg_v.jpg" alt = "Grande citerne"></td>
-		<td class = "sombre"><img src = "./fichiers/wagons/couvert_1bg_v.jpg" alt = "Tombereau"></td>
-		<td><img src = "./fichiers/wagons/cuve_1bg_v.jpg" alt = "Silo"></td>
+		<td><img src = "fichiers/wagons/citerne_grand_1bg_v.jpg" alt = "Grande citerne"></td>
+		<td class = "sombre"><img src = "fichiers/wagons/couvert_1bg_v.jpg" alt = "Tombereau"></td>
+		<td><img src = "fichiers/wagons/cuve_1bg_v.jpg" alt = "Silo"></td>
 	</tr>
 	<tr>
 		<th class = "sombre">Marques</th>
@@ -143,14 +153,14 @@
 	</tr>
 	<tr>
 		<th rowspan = "2">Images</th>
-		<td class = "sombre"><img src = "./fichiers/wagons/fourgon_postal.jpg" alt = "Fourgon postal"></td>
-		<td><img src = "./fichiers/wagons/fut_grand_1bg.jpg" alt = "Couvert"></td>
-		<td class = "sombre"><img src = "./fichiers/wagons/gravats_2bg.jpg" alt = "Tr&eacute;mie"></td>
+		<td class = "sombre"><img src = "fichiers/wagons/fourgon_postal.jpg" alt = "Fourgon postal"></td>
+		<td><img src = "fichiers/wagons/fut_grand_1bg.jpg" alt = "Couvert"></td>
+		<td class = "sombre"><img src = "fichiers/wagons/gravats_2bg.jpg" alt = "Tr&eacute;mie"></td>
 	</tr>
 	<tr>
-		<td class = "sombre"><img src = "./fichiers/wagons/fourgon_postal_v.jpg" alt = "Fourgon postal"></td>
-		<td><img src = "./fichiers/wagons/fut_grand_1bg_v.jpg" alt = "Couvert"></td>
-		<td class = "sombre"><img src = "./fichiers/wagons/gravats_2bg_v.jpg" alt = "Tr&eacute;mie"></td>
+		<td class = "sombre"><img src = "fichiers/wagons/fourgon_postal_v.jpg" alt = "Fourgon postal"></td>
+		<td><img src = "fichiers/wagons/fut_grand_1bg_v.jpg" alt = "Couvert"></td>
+		<td class = "sombre"><img src = "fichiers/wagons/gravats_2bg_v.jpg" alt = "Tr&eacute;mie"></td>
 	</tr>
 	<tr>
 		<th>Marques</th>
@@ -183,14 +193,14 @@
 	</tr>
 	<tr>
 		<th class = "sombre" rowspan = "2">Images</th>
-		<td><img src = "./fichiers/wagons/grue_1bg.jpg" alt = "Grue"></td>
-		<td class = "sombre"><img src = "./fichiers/wagons/ouvert_2bg.jpg" alt = "Tombereau &agrave; bogies"></td>
-		<td><img src = "./fichiers/wagons/ouvert_grand_1bg.jpg" alt = "Tombereau &agrave; essieux"></td>
+		<td><img src = "fichiers/wagons/grue_1bg.jpg" alt = "Grue"></td>
+		<td class = "sombre"><img src = "fichiers/wagons/ouvert_2bg.jpg" alt = "Tombereau &agrave; bogies"></td>
+		<td><img src = "fichiers/wagons/ouvert_grand_1bg.jpg" alt = "Tombereau &agrave; essieux"></td>
 	</tr>
 	<tr>
-		<td><img src = "./fichiers/wagons/grue_1bg_v.jpg" alt = "Grue"></td>
-		<td class = "sombre"><img src = "./fichiers/wagons/ouvert_2bg_v.jpg" alt = "Tombereau &agrave; bogies"></td>
-		<td><img src = "./fichiers/wagons/ouvert_grand_1bg_v.jpg" alt = "Tombereau &agrave; essieux"></td>
+		<td><img src = "fichiers/wagons/grue_1bg_v.jpg" alt = "Grue"></td>
+		<td class = "sombre"><img src = "fichiers/wagons/ouvert_2bg_v.jpg" alt = "Tombereau &agrave; bogies"></td>
+		<td><img src = "fichiers/wagons/ouvert_grand_1bg_v.jpg" alt = "Tombereau &agrave; essieux"></td>
 	</tr>
 	<tr>
 		<th class = "sombre">Marques</th>
@@ -223,14 +233,14 @@
 	</tr>
 	<tr>
 		<th rowspan = "2">Images</th>
-		<td class = "sombre"><img src = "./fichiers/wagons/plate_forme_1bg.jpg" alt = "Plat &agrave; essieux"></td>
-		<td><img src = "./fichiers/wagons/plate_forme_2bg.jpg" alt = "Plat &agrave; bogies"></td>
-		<td class = "sombre"><img src = "./fichiers/wagons/plate_forme_grand_2bg.jpg" alt = "Plat &agrave; bogies"></td>
+		<td class = "sombre"><img src = "fichiers/wagons/plate_forme_1bg.jpg" alt = "Plat &agrave; essieux"></td>
+		<td><img src = "fichiers/wagons/plate_forme_2bg.jpg" alt = "Plat &agrave; bogies"></td>
+		<td class = "sombre"><img src = "fichiers/wagons/plate_forme_grand_2bg.jpg" alt = "Plat &agrave; bogies"></td>
 	</tr>
 	<tr>
-		<td class = "sombre"><img src = "./fichiers/wagons/plate_forme_1bg_v.jpg" alt = "Plat &agrave; essieux"></td>
-		<td><img src = "./fichiers/wagons/plate_forme_2bg_v.jpg" alt = "Plat &agrave; bogies"></td>
-		<td class = "sombre"><img src = "./fichiers/wagons/plate_forme_grand_2bg_v.jpg" alt = "Plat &agrave; bogies"></td>
+		<td class = "sombre"><img src = "fichiers/wagons/plate_forme_1bg_v.jpg" alt = "Plat &agrave; essieux"></td>
+		<td><img src = "fichiers/wagons/plate_forme_2bg_v.jpg" alt = "Plat &agrave; bogies"></td>
+		<td class = "sombre"><img src = "fichiers/wagons/plate_forme_grand_2bg_v.jpg" alt = "Plat &agrave; bogies"></td>
 	</tr>
 	<tr>
 		<th>Marques</th>
@@ -252,45 +262,45 @@
 	<tr>
 		<th class = "sombre">Wagons</th>
 		<th>Transport d&apos;automobiles</th>
-		<th class = "vide"></th>
-		<th class = "vide"></th>
+		<th class = "sansBords"></th>
+		<th class = "sansBords"></th>
 	</tr>
 	<tr>
 		<th class = "sombre">Compagnie</th>
 		<td>SNCF</td>
-		<td class = "vide"></td>
-		<td class = "vide"></td>
+		<td class = "sansBords"></td>
+		<td class = "sansBords"></td>
 	</tr>
 	<tr>
 		<th class = "sombre" rowspan = "2">Images</th>
-		<td><img src = "./fichiers/wagons/voiture_2bg.jpg" alt = "Transport d&apos;automobiles"></td>
-		<td class = "vide"></td>
-		<td class = "vide"></td>
+		<td><img src = "fichiers/wagons/voiture_2bg.jpg" alt = "Transport d&apos;automobiles"></td>
+		<td class = "sansBords"></td>
+		<td class = "sansBords"></td>
 	</tr>
 	<tr>
-		<td class = "sombre"><img src = "./fichiers/wagons/voiture_2bg_v.jpg" alt = "Transport d&apos;automobiles"></td>
-		<td class = "vide"></td>
-		<td class = "vide"></td>
+		<td class = "sombre"><img src = "fichiers/wagons/voiture_2bg_v.jpg" alt = "Transport d&apos;automobiles"></td>
+		<td class = "sansBords"></td>
+		<td class = "sansBords"></td>
 	</tr>
 	<tr>
 		<th class = "sombre">Marques</th>
 		<td><a href = "https://fr.jouef.com/" target = "_blank">Jouef</a> et <a href = "https://it.limamodel.it/" target = "_blank">Lima</a></td>
-		<td class = "vide"></td>
-		<td class = "vide"></td>
+		<td class = "sansBords"></td>
+		<td class = "sansBords"></td>
 	</tr>
 	<tr>
 		<th class = "sombre">Nombre de wagons</th>
 		<td>3</td>
-		<td class = "vide"></td>
-		<td class = "vide"></td>
+		<td class = "sansBords"></td>
+		<td class = "sansBords"></td>
 	</tr>
 </table>
 
 <a href = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2Fcss.css" target = "_blank">
-	<img class = "validation" src = "./fichiers/validation/css.png" alt = "CSS Valide !">
+	<img class = "validation" src = "fichiers/validation/css.png" alt = "CSS Valide !">
 </a>
 <a href = "https://validator.w3.org/nu/?doc=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2Fwagons.html" target = "_blank">
-	<img class = "validation" src = "./fichiers/validation/html.png" alt = "HTML Valide !">
+	<img class = "validation" src = "fichiers/validation/html.png" alt = "HTML Valide !">
 </a>
 
 </body>
