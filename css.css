@@ -9,7 +9,6 @@ couleurs utilisées (background, background-color, border, box-shadow, color, te
            -> ombre des en-têtes de tableaux <th>
            -> ombre des contenus de tableaux <td>
            -> ombre des menus <nav>
-           -> ombre de l'élément "tableReseauxSociaux"
            -> ombre de l'élément "tgv"
            -> ombre de l'élément "temps"
            -> ombre de l'élément "circuit"
@@ -276,9 +275,7 @@ li {
 
 	border: 0px;
 	background-color: transparent;
-	margin-left: auto;
-	margin-right: auto;
-	box-shadow: 0px 0px 0px #000000;
+	box-shadow: 0px 0px 0px;
 
 }
 
@@ -350,3 +347,11 @@ li {
 	column-count: 2;
 
 }
+/*
+#tableLangues {
+
+	border: 0px;
+	box-shadow: 0px 0px 0px 0px;
+
+}
+*/

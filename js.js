@@ -40,5 +40,22 @@ function clair(page) { // change la source des images pour le thème clair
 	document.getElementById("sectionMilieu").src = "fichiers/icones/voituresClair.png";
 	document.getElementById("sectionDroite").src = "fichiers/icones/wagonsClair.png";
 
-
 }
+
+// function index(langue) {
+
+// 	switch (langue) {
+
+// 		case 'en':
+
+// 			window.location.href = "en/index.html";
+// 			break;
+
+// 		case 'cz':
+
+// 			window.location.href = "cz/index.html";
+// 			break;
+
+// 	}
+
+// }
