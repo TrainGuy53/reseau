@@ -13,7 +13,6 @@
 
 <nav>
 <ul>
-
 <li>
 	<a href = "index.html">
 		<img id = "logo" src = "fichiers/icones/trainGuy53.png" alt = "Accueil">
@@ -39,14 +38,13 @@
 </li>
 <li>
 	<div class = "clairSombre">
-		<input type = "radio" id = "radio-one" name = "switch-one" onclick = "indexClair()" checked/>
+		<input type = "radio" id = "radio-one" name = "switch-one" onclick = "clair(1)" checked/>
 		<label for = "radio-one">&#9788;</label>
 		<br>
-		<input type = "radio" id = "radio-two" name = "switch-one" onclick = "indexSombre()"/>
+		<input type = "radio" id = "radio-two" name = "switch-one" onclick = "sombre(1)"/>
 		<label for = "radio-two">&#9790;</label>
 	</div>
 </li>
-
 </ul>
 </nav>
 
@@ -67,7 +65,9 @@
 
 <div id = "colones">
 	<p>
-		Voil&agrave; un plan simplifi&eacute; de mon circuit, il y a deux boucles ind&eacute;pandantes, un pont, un croisement et des voies de garage (qui n&apos;y figurent pas).
+		Voil&agrave; un plan simplifi&eacute; de mon circuit : il y a deux boucles ind&eacute;pandantes (bleu et vert), un pont (violet), deux croisements (rouge) et quatre voies de garage (jaune).<br>
+		<br>
+		Les aiguillages B, I et P sont &eacute;l&eacute;ctrifi&eacute;s et permettent de quitter la <strong>B</strong>oucle, d&apos;acc&eacute;der &agrave; l&apos;<strong>I</strong>nt&eacute;rieur, et d&apos;acc&eacute;der au <strong>P</strong>ont.
 	</p>
 	<div class = "plan">
 		<div class = "simple">

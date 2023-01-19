@@ -1,54 +1,40 @@
-function indexSombre() {
+function sombre(page) { // change la source des images pour le thème sombre
 
-	document.getElementById("tgv").src = "fichiers/tgvSombre.gif";
-	document.getElementById("circuit").src = "fichiers/circuits/circuitSombre.png";
-	document.getElementById("details").src = "fichiers/circuits/detailsSombres.png";
+	if (page == 1) { // index.html contient des images différentes
+
+		document.getElementById("tgv").src = "fichiers/tgvSombre.gif";
+		document.getElementById("circuit").src = "fichiers/circuits/circuitSombre.png";
+		document.getElementById("details").src = "fichiers/circuits/detailsSombres.png";
+
+	} else if (page == 2) { // locomotives.html aussi
+
+		document.getElementById("temps").src = "fichiers/tempsSombre.png";
+
+	}
+
 	document.getElementById("sectionGauche").src = "fichiers/icones/locomotivesSombre.png";
 	document.getElementById("sectionMilieu").src = "fichiers/icones/voituresSombre.png";
 	document.getElementById("sectionDroite").src = "fichiers/icones/wagonsSombre.png";
 
 }
 
-function indexClair() {
-	
-	document.getElementById("tgv").src = "fichiers/tgvClair.gif";
-	document.getElementById("circuit").src = "fichiers/circuits/circuitClair.png";
-	document.getElementById("details").src = "fichiers/circuits/detailsClairs.png";
+function clair(page) { // change la source des images pour le thème clair
+
+	if (page == 1) { // index.html contient des images différentes
+
+		document.getElementById("tgv").src = "fichiers/tgvClair.gif";
+		document.getElementById("circuit").src = "fichiers/circuits/circuitClair.png";
+		document.getElementById("details").src = "fichiers/circuits/detailsClairs.png";
+
+	} else if (page == 2) { // locomotives.html aussi
+
+		document.getElementById("temps").src = "fichiers/tempsClair.png";
+
+	}
+
 	document.getElementById("sectionGauche").src = "fichiers/icones/locomotivesClair.png";
 	document.getElementById("sectionMilieu").src = "fichiers/icones/voituresClair.png";
 	document.getElementById("sectionDroite").src = "fichiers/icones/wagonsClair.png";
 
-}
-
-function locomotivesSombre() {
-
-	document.getElementById("sectionGauche").src = "fichiers/icones/locomotivesSombre.png";
-	document.getElementById("sectionMilieu").src = "fichiers/icones/voituresSombre.png";
-	document.getElementById("sectionDroite").src = "fichiers/icones/wagonsSombre.png";
-	document.getElementById("temps").src = "fichiers/tempsSombre.png";
-
-}
-
-function locomotivesClair() {
-
-	document.getElementById("sectionGauche").src = "fichiers/icones/locomotivesClair.png";
-	document.getElementById("sectionMilieu").src = "fichiers/icones/voituresClair.png";
-	document.getElementById("temps").src = "fichiers/tempsClair.png";
-
-}
-
-function sombre() {
-
-	document.getElementById("sectionGauche").src = "fichiers/icones/locomotivesSombre.png";
-	document.getElementById("sectionMilieu").src = "fichiers/icones/voituresSombre.png";
-	document.getElementById("sectionDroite").src = "fichiers/icones/wagonsSombre.png";
-
-}
-
-function clair() {
-
-	document.getElementById("sectionGauche").src = "fichiers/icones/locomotivesClair.png";
-	document.getElementById("sectionMilieu").src = "fichiers/icones/voituresClair.png";
-	document.getElementById("sectionDroite").src = "fichiers/icones/wagonsClair.png";
 
 }
