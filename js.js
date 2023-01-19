@@ -1,12 +1,14 @@
 function sombre(page) { // change la source des images pour le thème sombre
 
-	if (page == 1) { // index.html contient des images différentes
+	"use strict"; // il faut le mettre
+
+	if (page === 1) { // index.html contient des images différentes
 
 		document.getElementById("tgv").src = "fichiers/tgvSombre.gif";
 		document.getElementById("circuit").src = "fichiers/circuits/circuitSombre.png";
 		document.getElementById("details").src = "fichiers/circuits/detailsSombres.png";
 
-	} else if (page == 2) { // locomotives.html aussi
+	} else if (page === 2) { // locomotives.html aussi
 
 		document.getElementById("temps").src = "fichiers/tempsSombre.png";
 
@@ -20,13 +22,15 @@ function sombre(page) { // change la source des images pour le thème sombre
 
 function clair(page) { // change la source des images pour le thème clair
 
-	if (page == 1) { // index.html contient des images différentes
+	"use strict"; // il faut le mettre
+
+	if (page === 1) { // index.html contient des images différentes
 
 		document.getElementById("tgv").src = "fichiers/tgvClair.gif";
 		document.getElementById("circuit").src = "fichiers/circuits/circuitClair.png";
 		document.getElementById("details").src = "fichiers/circuits/detailsClairs.png";
 
-	} else if (page == 2) { // locomotives.html aussi
+	} else if (page === 2) { // locomotives.html aussi
 
 		document.getElementById("temps").src = "fichiers/tempsClair.png";
 
