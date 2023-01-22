@@ -38,10 +38,10 @@
 </li>
 <li>
 	<div class = "clairSombre">
-		<input type = "radio" id = "radio-one" name = "switch-one" onclick = "clair(1)" checked>
+		<input type = "radio" id = "radio-one" name = "switch-one" onclick = "theme('Clair', 'index')" checked>
 		<label for = "radio-one">&#9788;</label>
 		<br>
-		<input type = "radio" id = "radio-two" name = "switch-one" onclick = "sombre(1)">
+		<input type = "radio" id = "radio-two" name = "switch-one" onclick = "theme('Sombre', 'index')">
 		<label for = "radio-two">&#9790;</label>
 	</div>
 </li>
@@ -65,16 +65,16 @@
 
 <div id = "colones">
 	<p>
-		Voil&agrave; un plan simplifi&eacute; de mon circuit : il y a deux boucles ind&eacute;pandantes (bleu et vert), un pont (violet), deux croisements (rouge) et quatre voies de garage (jaune).<br>
+		Voil&agrave; un plan simplifi&eacute; de mon circuit : il y a deux boucles ind&eacute;pandantes, en bleu et en vert, un pont, en violet, deux croisements, en rouge, et quatre voies de garage, en jaune.<br>
 		<br>
-		Les aiguillages B, I et P sont &eacute;l&eacute;ctrifi&eacute;s et permettent de quitter la <strong>B</strong>oucle, d&apos;acc&eacute;der &agrave; l&apos;<strong>I</strong>nt&eacute;rieur, et d&apos;acc&eacute;der au <strong>P</strong>ont.
+		Les aiguillages B, I et P sont &eacute;l&eacute;ctrifi&eacute;s et permettent de changer de <strong>B</strong>oucle, d&apos;acc&eacute;der &agrave; l&apos;<strong>I</strong>nt&eacute;rieur, et d&apos;acc&eacute;der au <strong>P</strong>ont.
 	</p>
 	<div class = "plan">
 		<div class = "simple">
 			<img id = "circuit" src = "fichiers/circuits/circuitClair.png" alt = "Circuit simplifié">
 		</div>
 		<div class = "detaile">
-			<img id = "details" src = "fichiers/circuits/detailsClairs.png" alt = "Circuit détaillé">
+			<img id = "details" src = "fichiers/circuits/detailsClair.png" alt = "Circuit détaillé">
 		</div>
 	</div>
 </div>
@@ -115,18 +115,7 @@
 		</th>
 	</tr>
 </table>
-<!-- 
-<table id = "tableLangues">
-	<tr>
-		<td>
-			<img src = "fichiers/langues/english.png" alt = "English" onclick = "index('en')">
-		</td>
-		<td>
-			<img src = "fichiers/langues/cesky.png" alt = "&Ccaron;esk&yacute;" onclick = "index('cz')">
-		</td>
-	</tr>
-</table>
- -->
+
 <a href = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2Fcss.css" target = "_blank">
 	<img class = "validation" src = "fichiers/validation/css.png" alt = "CSS Valide !">
 </a>

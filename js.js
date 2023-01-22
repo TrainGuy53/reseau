@@ -1,61 +1,30 @@
-function sombre(page) { // change la source des images pour le thème sombre
+function theme(etat, page) { // change la source des images pour les thèmes
+
+	// "etat" vaut "Clair" ou "Sombre" (majuscules importantes)
+	// "page" vaut "index", "locomotives", "voitures" ou "wagons"
 
 	"use strict"; // il faut le mettre
 
-	if (page === 1) { // index.html contient des images différentes
+	switch (page) {
 
-		document.getElementById("tgv").src = "fichiers/tgvSombre.gif";
-		document.getElementById("circuit").src = "fichiers/circuits/circuitSombre.png";
-		document.getElementById("details").src = "fichiers/circuits/detailsSombres.png";
+		case 'index': // index.html contient des images différentes
 
-	} else if (page === 2) { // locomotives.html aussi
+			document.getElementById("tgv").src = "fichiers/tgv" + etat + ".gif";
+			document.getElementById("circuit").src = "fichiers/circuits/circuit" + etat + ".png";
+			document.getElementById("details").src = "fichiers/circuits/details" + etat + ".png";
+			break;
 
-		document.getElementById("temps").src = "fichiers/tempsSombre.png";
+		case 'locomotives': // locomotives.html aussi
 
-	}
-
-	document.getElementById("sectionGauche").src = "fichiers/icones/locomotivesSombre.png";
-	document.getElementById("sectionMilieu").src = "fichiers/icones/voituresSombre.png";
-	document.getElementById("sectionDroite").src = "fichiers/icones/wagonsSombre.png";
-
-}
-
-function clair(page) { // change la source des images pour le thème clair
-
-	"use strict"; // il faut le mettre
-
-	if (page === 1) { // index.html contient des images différentes
-
-		document.getElementById("tgv").src = "fichiers/tgvClair.gif";
-		document.getElementById("circuit").src = "fichiers/circuits/circuitClair.png";
-		document.getElementById("details").src = "fichiers/circuits/detailsClairs.png";
-
-	} else if (page === 2) { // locomotives.html aussi
-
-		document.getElementById("temps").src = "fichiers/tempsClair.png";
+			document.getElementById("temps").src = "fichiers/temps" + etat + ".png";
+			break;
 
 	}
 
-	document.getElementById("sectionGauche").src = "fichiers/icones/locomotivesClair.png";
-	document.getElementById("sectionMilieu").src = "fichiers/icones/voituresClair.png";
-	document.getElementById("sectionDroite").src = "fichiers/icones/wagonsClair.png";
+	// ce qui suit est à executer pour toutes les pages
+
+	document.getElementById("sectionGauche").src = "fichiers/icones/locomotives" + etat + ".png";
+	document.getElementById("sectionMilieu").src = "fichiers/icones/voitures" + etat + ".png";
+	document.getElementById("sectionDroite").src = "fichiers/icones/wagons" + etat + ".png";
 
 }
-
-// function index(langue) {
-
-// 	switch (langue) {
-
-// 		case 'en':
-
-// 			window.location.href = "en/index.html";
-// 			break;
-
-// 		case 'cz':
-
-// 			window.location.href = "cz/index.html";
-// 			break;
-
-// 	}
-
-// }

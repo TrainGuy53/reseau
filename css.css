@@ -2,51 +2,67 @@
 
 couleurs utilisées (background, background-color, border, box-shadow, color, text-shadow)
 
- - #000000 -> couleur du texte de la page <body>
-           -> ombre des paragraphes <p>
-           -> couleur des liens <a>
-           -> ombre des tableaux <table>
-           -> ombre des en-têtes de tableaux <th>
-           -> ombre des contenus de tableaux <td>
-           -> ombre des menus <nav>
-           -> ombre de l'élément "tgv"
-           -> ombre de l'élément "temps"
-           -> ombre de l'élément "circuit"
-           -> ombre de l'élément "details"
+	#000000
+		couleur du texte de la page <body>
+		ombre des paragraphes <p>
+		couleur des liens <a>
+		ombre des tableaux <table>
+		ombre des en-têtes de tableaux <th>
+		ombre des contenus de tableaux <td>
+		ombre des menus <nav>
+		ombre de l'élément "tgv"
+		ombre de l'élément "temps"
+		ombre de l'élément "circuit"
+		ombre de l'élément "details"
 
- - #568f8f -> arrière-plan des éléments de classe "sombre"
+	#568f8f
+		arrière-plan des éléments de classe "sombre"
 
- - #609f9f -> arrière-plan de la page <body>
-           -> arrière-plan des tableaux <table>
-           -> arrière-plan des menus <nav>
+	#609f9f
+		arrière-plan de la page <body>
+		arrière-plan des tableaux <table>
+		arrière-plan des menus <nav>
 
- - #9f609f -> couleur des liens survolés <a>:hover
+	#9f609f
+		couleur des liens survolés <a>:hover
 
- - #9f9f60 -> bordure des paragraphes <p>
-           -> bordure des tableaux <table>
-           -> couleur des en-têtes de tableaux <th>
-           -> bordure des en-têtes de tableaux <th>
-           -> bordure des contenus de tableaux <td>
-           -> couleur des éléments de classe "uic"
-           -> bordure des éléments de classe "sombre"
-           -> arrière-plan des entrées vérifiées <input>:checked et des labels <label>
+	#9f9f60
+		bordure des paragraphes <p>
+		bordure des tableaux <table>
+		couleur des en-têtes de tableaux <th>
+		bordure des en-têtes de tableaux <th>
+		bordure des contenus de tableaux <td>
+		couleur des éléments de classe "uic"
+		bordure des éléments de classe "sombre"
+		arrière-plan des entrées vérifiées <input>:checked et des labels <label>
 
- - #bbbbbb -> arrière-plan des paragraphes <p>
+	#bbbbbb
+		arrière-plan des paragraphes <p>
 
- - #ffffff -> ombre du texte de la page <body>
+	#ffffff
+		ombre du texte de la page <body>
 
 polices utilisées (font-family)
 
- - bahnschrift -> texte de la page <body>
- - serif -> titres de niveau 1 <h1>
+	bahnschrift
+		texte de la page <body>
+
+	serif
+		titres de niveau 1 <h1>
 
 tailles de polices utilisées (font-size)
 
- - 200% -> texte de la page <body>
- - 150% -> texte des éléments de classe "clairSombre"
- - 80% -> texte des tableaux <table>
- - 50% -> texte des menus <nav>
+	200%
+		texte de la page <body>
 
+	150%
+		texte des éléments de classe "clairSombre"
+
+	80%
+		texte des tableaux <table>
+
+	50%
+		texte des menus <nav>
 
 */
 
@@ -170,7 +186,7 @@ li {
 
 
 
-	/* class="..." */
+	/* class = "..." */
 
 
 .reseauxSociaux {
@@ -268,7 +284,7 @@ li {
 
 
 
-	/* id="..." */
+	/* id = "..." */
 
 
 #tableReseauxSociaux {
@@ -347,11 +363,3 @@ li {
 	column-count: 2;
 
 }
-/*
-#tableLangues {
-
-	border: 0px;
-	box-shadow: 0px 0px 0px 0px;
-
-}
-*/
