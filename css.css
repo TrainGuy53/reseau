@@ -1,74 +1,138 @@
 /*
+========================================================================================================================
+=                                                                                                                      =
+=                                             Site créé par Train Guy 53                                               =
+=                                                                                                                      =
+=                                                       css.css                                                        =
+=                                                                                                                      =
+=                                                    Janvier 2023                                                      =
+=                                                                                                                      =
+========================================================================================================================
+*/
 
-couleurs utilisées (background, background-color, border, box-shadow, color, text-shadow)
+/*
 
-	#000000
-		couleur du texte de la page <body>
-		ombre des paragraphes <p>
-		couleur des liens <a>
-		ombre des tableaux <table>
-		ombre des en-têtes de tableaux <th>
-		ombre des contenus de tableaux <td>
-		ombre des menus <nav>
-		ombre de l'élément "tgv"
-		ombre de l'élément "temps"
-		ombre de l'élément "circuit"
-		ombre de l'élément "details"
+========================================================================================================================
+	couleurs (background, background-color, border, box-shadow, color, text-shadow)
+========================================================================================================================
 
-	#568f8f
-		arrière-plan des éléments de classe "sombre"
+		#000000
+			couleur du texte de la page							<body>
+			ombre des paragraphes								<p>
+			couleur des liens									<a>
+			ombre des tableaux									<table>
+			ombre des en-têtes de tableaux						<th>
+			ombre des contenus de tableaux						<td>
+			ombre des menus										<nav>
+			ombre de l'élément									"tgv"
+			ombre de l'élément									"temps"
+			ombre de l'élément									"circuit"
+			ombre de l'élément									"details"
 
-	#609f9f
-		arrière-plan de la page <body>
-		arrière-plan des tableaux <table>
-		arrière-plan des menus <nav>
+		#568f8f
+			arrière-plan des éléments de classe					"sombre"
 
-	#9f609f
-		couleur des liens survolés <a>:hover
+		#609f9f
+			arrière-plan de la page								<body>
+			arrière-plan des tableaux							<table>
+			arrière-plan des menus								<nav>
 
-	#9f9f60
-		bordure des paragraphes <p>
-		bordure des tableaux <table>
-		couleur des en-têtes de tableaux <th>
-		bordure des en-têtes de tableaux <th>
-		bordure des contenus de tableaux <td>
-		couleur des éléments de classe "uic"
-		bordure des éléments de classe "sombre"
-		arrière-plan des entrées vérifiées <input>:checked et des labels <label>
+		#9f609f
+			couleur des liens survolés							<a>:hover
 
-	#bbbbbb
-		arrière-plan des paragraphes <p>
+		#9f9f60
+			bordure des paragraphes								<p>
+			bordure des tableaux								<table>
+			couleur des en-têtes de tableaux					<th>
+			bordure des en-têtes de tableaux					<th>
+			bordure des contenus de tableaux					<td>
+			couleur des éléments de classe						"uic"
+			bordure des éléments de classe						"sombre"
 
-	#ffffff
-		ombre du texte de la page <body>
+		#bbbbbb
+			arrière-plan des paragraphes						<p>
 
-polices utilisées (font-family)
+		#ffffff
+			ombre du texte de la page							<body>
 
-	bahnschrift
-		texte de la page <body>
+========================================================================================================================
+	polices (font-family)
+========================================================================================================================
 
-	serif
-		titres de niveau 1 <h1>
+		bahnschrift
+			texte de la page									<body>
 
-tailles de polices utilisées (font-size)
+		serif
+			titres de niveau 100								<h1>
 
-	200%
-		texte de la page <body>
+========================================================================================================================
+	tailles de polices (font-size)
+========================================================================================================================
 
-	150%
-		texte des éléments de classe "clairSombre"
+		200%
+			texte de la page									<body>
 
-	80%
-		texte des tableaux <table>
+		150%
+			texte des éléments de classe						"clairSombre"
+			texte des entrées vérifiées et de leurs labels		<input>:checked + <label>
+			texte de l'élément									"clairSombre"
 
-	50%
-		texte des menus <nav>
+		80%
+			texte des tableaux									<table>
+
+		50%
+			texte des menus										<nav>
+
+========================================================================================================================
+	marges (margin, margin-top, margin-bottom, margin-left, margin-right)
+========================================================================================================================
+
+		5%
+			marge de la page									<body>
+
+		0
+			marge haute des images								<img>
+			marge basse de l'élément							"sectionGauche"
+			marge basse de l'élément							"sectionMilieu"
+			marge basse de l'élément							"sectionDroite"
+
+		-8px
+			marge basse des images								<img>
+
+		3%
+			marge des menus										<nav>
+
+		1%
+			marge haute des liens de menus						<li>
+
+		-4%
+			marge haute de l'élément							"logo"
+
+		auto
+			marge droite de l'élément							"temps"
+			marge gauche de l'élément							"temps"
 
 */
 
+/*
+========================================================================================================================
+	<.../>
+========================================================================================================================
+*/
 
-	/* <.../> */
+a {
 
+	color: #000000;
+	font-style: italic;
+	text-decoration: none;
+
+}
+
+a:hover {
+
+	color: #9f609f;
+
+}
 
 body {
 
@@ -88,26 +152,66 @@ h1 {
 
 }
 
+img {
+
+	width: 100%;
+	border-radius: 15px;
+	margin-top: 0;
+	margin-bottom: -8px;
+
+}
+
+input {
+
+	width: 0;
+
+}
+
+input:checked + label {
+
+	font-size: 150%;
+
+}
+
+label {
+
+	transition: all 0.2s ease-in-out;
+
+}
+
+label:hover {
+
+	cursor: pointer;
+
+}
+
+li {
+
+	float: left;
+	width: 20%;
+	margin-top: 1%;
+
+}
+
+nav {
+
+	margin: 3%;
+	font-size: 50%;
+	background-color: #609f9f;
+	box-shadow: 3px 3px 3px #000000;
+	border-radius: 20px;
+	position: sticky;
+	top: 0;
+	opacity: 0.9;
+
+}
+
 p {
 
 	background-color: #bbbbbb;
 	border: 3px #9f9f60 outset;
 	border-radius: 20px;
 	box-shadow: 3px 3px 3px #000000;
-
-}
-
-a {
-
-	color: #000000;
-	font-style: italic;
-	text-decoration: none;
-
-}
-
-a:hover {
-
-	color: #9f609f;
 
 }
 
@@ -122,16 +226,6 @@ table {
 
 }
 
-th {
-
-	color: #9f9f60;
-	border: 2px #9f9f60 outset;
-	border-radius: 15px;
-	box-shadow: 1px 1px 1px #000000;
-
-}
-
-
 td {
 
 	border: 1px #9f9f60 outset;
@@ -140,25 +234,12 @@ td {
 
 }
 
-img {
+th {
 
-	width: 100%;
+	color: #9f9f60;
+	border: 2px #9f9f60 outset;
 	border-radius: 15px;
-	margin-top: 0px;
-	margin-bottom: -8px;
-
-}
-
-nav {
-
-	margin: 3%;
-	font-size: 50%;
-	background-color: #609f9f;
-	box-shadow: 3px 3px 3px #000000;
-	border-radius: 20px;
-	position: sticky;
-	top: 0px;
-	opacity: 0.9;
+	box-shadow: 1px 1px 1px #000000;
 
 }
 
@@ -176,18 +257,11 @@ ul:after {
 
 }
 
-li {
-
-	float: left;
-	width: 20%;
-	margin-top: 1%;
-
-}
-
-
-
-	/* class = "..." */
-
+/*
+========================================================================================================================
+	class = "..."
+========================================================================================================================
+*/
 
 .reseauxSociaux {
 
@@ -196,24 +270,10 @@ li {
 
 }
 
-.validation {
-
-	width: 5%;
-	border-radius: 0px;
-
-}
-
-.uic {
-
-	color: #9f9f60;
-	font-style: normal;
-
-}
-
 .sansBords {
 
-	border: 0px;
-	box-shadow: 0px 0px 0px;
+	border: 0;
+	box-shadow: 0 0 0;
 
 }
 
@@ -224,88 +284,96 @@ li {
 
 }
 
+.uic {
 
-.plan .detaile, .plan:hover .simple {
+	color: #9f9f60;
+	font-style: normal;
+
+}
+
+.validation {
+
+	width: 5%;
+	border-radius: 0;
+
+}
+
+/*
+========================================================================================================================
+	id = "..."
+========================================================================================================================
+*/
+
+#clairSombre {
+
+	font-size: 150%;
+	margin-top: 0;
+	margin-bottom: 0;
+
+}
+
+#circuit {
+
+	box-shadow: 3px 3px 3px #000000;
+	border-radius: 20px;
+
+}
+
+#colones {
+
+	column-count: 2;
+
+}
+
+#details {
+
+	box-shadow: 3px 3px 3px #000000;
+	border-radius: 20px;
+
+}
+
+#plan .detaile, #plan:hover .simple {
 
 	display: none;
 
 }
 
-.plan:hover .detaile {
+#plan:hover .detaile {
 
 	display: block;
 
 }
 
-.clairSombre {
+#sectionDroite {
 
-	font-size: 150%;
-
-
-}
-
-.clairSombre input {
-
-	width: 0px;
+	border-radius: 0;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	margin-bottom: 0;
 
 }
 
-.clairSombre label {
+#sectionGauche {
 
-	padding: 4px 16px;
-	transition: all 0.1s ease-in-out;
-
-}
-
-.clairSombre label:first-of-type {
-
-	border-radius: 20px 20px 0 0;
+	border-radius: 0;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	margin-bottom: 0;
 
 }
 
-.clairSombre label:last-of-type {
+#sectionMilieu {
 
-	border-radius: 0 0 20px 20px;
-
-}
-
-.clairSombre label:hover {
-
-	cursor: pointer;
+	border-radius: 0;
+	margin-bottom: 0;
 
 }
-
-.clairSombre input:checked + label {
-
-	background-color: #9f9f60;
-	font-weight: bold;
-
-}
-
-
-
-	/* id = "..." */
-
 
 #tableReseauxSociaux {
 
-	border: 0px;
+	border: 0;
 	background-color: transparent;
-	box-shadow: 0px 0px 0px;
-
-}
-
-#logo {
-
-	width: 50%;
-	margin-top: -4%;
-
-}
-
-#tgv {
-
-	box-shadow: 3px 3px 3px #000000;
-	width: 80%;
+	box-shadow: 0 0 0;
 
 }
 
@@ -319,47 +387,16 @@ li {
 
 }
 
-#sectionGauche {
-
-	border-radius: 0px;
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
-	margin-bottom: 0px;
-
-}
-
-#sectionMilieu {
-
-	border-radius: 0px;
-	margin-bottom: 0px;
-
-}
-
-#sectionDroite {
-
-	border-radius: 0px;
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
-	margin-bottom: 0px;
-
-}
-
-#circuit {
+#tgv {
 
 	box-shadow: 3px 3px 3px #000000;
-	width: 100%;
+	width: 80%;
 
 }
 
-#details {
+#logo {
 
-	box-shadow: 3px 3px 3px #000000;
-	width: 100%;
-
-}
-
-#colones {
-
-	column-count: 2;
+	width: 50%;
+	margin-top: -4%;
 
 }

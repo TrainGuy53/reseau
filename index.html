@@ -1,3 +1,15 @@
+<!--
+========================================================================================================================
+=                                                                                                                      =
+=                                             Site créé par Train Guy 53                                               =
+=                                                                                                                      =
+=                                                     index.html                                                       =
+=                                                                                                                      =
+=                                                    Janvier 2023                                                      =
+=                                                                                                                      =
+========================================================================================================================
+-->
+
 <!DOCTYPE html>
 <html lang = "fr">
 <head>
@@ -15,34 +27,34 @@
 <ul>
 <li>
 	<a href = "index.html">
-		<img id = "logo" src = "fichiers/icones/trainGuy53.png" alt = "Accueil">
+		<img id = "logo" src = "fichiers/icones/trainGuy53.png" alt = "index.html">
 	</a>
 </li>
 <li>
 	<a href = "locomotives.html">
-		<img id = "sectionGauche" src = "fichiers/icones/locomotivesClair.png" alt = "Locomotives">
+		<img id = "sectionGauche" src = "fichiers/icones/locomotivesClair.png" alt = "locomotives.html">
 		Locomotives
 	</a>
 </li>
 <li>
 	<a href = "voitures.html">
-		<img id = "sectionMilieu" class = "section" src = "fichiers/icones/voituresClair.png" alt = "Voitures">
+		<img id = "sectionMilieu" class = "section" src = "fichiers/icones/voituresClair.png" alt = "voitures.html">
 		Voitures
 	</a>
 </li>
 <li>
 	<a href = "wagons.html">
-		<img id = "sectionDroite" src = "fichiers/icones/wagonsClair.png" alt = "Wagons">
+		<img id = "sectionDroite" src = "fichiers/icones/wagonsClair.png" alt = "wagons.html">
 		Wagons
 	</a>
 </li>
 <li>
-	<div class = "clairSombre">
-		<input type = "radio" id = "radio-one" name = "switch-one" onclick = "theme('Clair', 'index')" checked>
-		<label for = "radio-one">&#9788;</label>
+	<div id = "clairSombre">
+		<input type = "radio" id = "radioClair" name = "radioClairSombre" onclick = "theme('Clair', 'index')" checked>
+		<label for = "radioClair">🌞</label>
 		<br>
-		<input type = "radio" id = "radio-two" name = "switch-one" onclick = "theme('Sombre', 'index')">
-		<label for = "radio-two">&#9790;</label>
+		<input type = "radio" id = "radioSombre" name = "radioClairSombre" onclick = "theme('Sombre', 'index')">
+		<label for = "radioSombre">🌙</label>
 	</div>
 </li>
 </ul>
@@ -57,7 +69,7 @@
 	Ce site &agrave; &eacute;t&eacute; cr&eacute;&eacute; par <a href = "https://www.instagram.com/train_guy_53/" target = "_blank">Train Guy 53</a>.
 </p>
 
-<img id = "tgv" src = "fichiers/tgvClair.gif" alt = "tgv">
+<img id = "tgv" src = "fichiers/tgvClair.gif" alt = "tgv.gif">
 
 <p>
 	Vous trouverez ici une pr&eacute;sentation et une description des locomotives, voitures et wagons du r&eacute;seau.
@@ -69,7 +81,7 @@
 		<br>
 		Les aiguillages B, I et P sont &eacute;l&eacute;ctrifi&eacute;s et permettent de changer de <strong>B</strong>oucle, d&apos;acc&eacute;der &agrave; l&apos;<strong>I</strong>nt&eacute;rieur, et d&apos;acc&eacute;der au <strong>P</strong>ont.
 	</p>
-	<div class = "plan">
+	<div id = "plan">
 		<div class = "simple">
 			<img id = "circuit" src = "fichiers/circuits/circuitClair.png" alt = "Circuit simplifié">
 		</div>
