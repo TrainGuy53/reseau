@@ -26,7 +26,6 @@
 			ombre des menus										<nav>
 			ombre de l'élément									"tgv"
 			ombre de l'élément									"temps"
-			ombre de l'élément									"circuit"
 			ombre de l'élément									"details"
 
 		#568f8f
@@ -263,6 +262,12 @@ ul:after {
 ========================================================================================================================
 */
 
+.circuit {
+
+	box-shadow: 0 0 0;
+
+}
+
 .reseauxSociaux {
 
 	width: 25%;
@@ -312,33 +317,19 @@ ul:after {
 
 }
 
-#circuit {
-
-	box-shadow: 3px 3px 3px #000000;
-	border-radius: 20px;
-
-}
-
 #colones {
 
 	column-count: 2;
 
 }
 
-#details {
-
-	box-shadow: 3px 3px 3px #000000;
-	border-radius: 20px;
-
-}
-
-#plan .detaile, #plan:hover .simple {
+#circuits .detaile, #circuits:hover .simple {
 
 	display: none;
 
 }
 
-#plan:hover .detaile {
+#circuits:hover .detaile {
 
 	display: block;
 

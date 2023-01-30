@@ -22,7 +22,6 @@ function theme(etat, page) { // change la source des images pour les thèmes
 		case 'index': // index.html contient des images différentes
 
 			document.getElementById("tgv").src = "fichiers/tgv" + etat + ".gif";
-			document.getElementById("circuit").src = "fichiers/circuits/circuit" + etat + ".png";
 			document.getElementById("details").src = "fichiers/circuits/details" + etat + ".png";
 			break;
 
