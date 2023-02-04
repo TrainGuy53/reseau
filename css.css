@@ -1,14 +1,12 @@
-/*
-========================================================================================================================
-=                                                                                                                      =
-=                                             Site créé par Train Guy 53                                               =
-=                                                                                                                      =
-=                                                       css.css                                                        =
-=                                                                                                                      =
-=                                                    Janvier 2023                                                      =
-=                                                                                                                      =
-========================================================================================================================
-*/
+/* ================================================================================================================== */
+/*                                                                                                                    */
+/*                                            Site créé par Train Guy 53                                              */
+/*                                                                                                                    */
+/*                                                      css.css                                                       */
+/*                                                                                                                    */
+/*                                                   Janvier 2023                                                     */
+/*                                                                                                                    */
+/* ================================================================================================================== */
 
 /*
 
@@ -17,7 +15,6 @@
 ========================================================================================================================
 
 		#000000
-			couleur du texte de la page							<body>
 			ombre des paragraphes								<p>
 			couleur des liens									<a>
 			ombre des tableaux									<table>
@@ -26,7 +23,6 @@
 			ombre des menus										<nav>
 			ombre de l'élément									"tgv"
 			ombre de l'élément									"temps"
-			ombre de l'élément									"details"
 
 		#568f8f
 			arrière-plan des éléments de classe					"sombre"
@@ -138,7 +134,6 @@ body {
 	background: #609f9f url("fichiers/rail.png") repeat-y left top;
 	margin: 5%;
 	text-shadow: 1px 1px 1px #ffffff;
-	color: #000000;
 	font-family: bahnschrift;
 	font-size: 200%;
 	text-align: center;
@@ -148,6 +143,7 @@ body {
 h1 {
 
 	font-family: serif;
+	text-shadow: 2px 2px 2px #ffffff;
 
 }
 
@@ -211,6 +207,7 @@ p {
 	border: 3px #9f9f60 outset;
 	border-radius: 20px;
 	box-shadow: 3px 3px 3px #000000;
+	padding: 1%;
 
 }
 
@@ -245,11 +242,7 @@ th {
 ul {
 
 	list-style-type: none;
-
-}
-
-ul:after {
-
+	/* je ne comprends pas bien ce que cela fait mais tout est necessaire */
 	content: "";
 	display: table;
 	clear: both;
@@ -275,7 +268,7 @@ ul:after {
 
 }
 
-.sansBords {
+.thSansBords {
 
 	border: 0;
 	box-shadow: 0 0 0;
@@ -311,10 +304,19 @@ ul:after {
 
 #clairSombre {
 
-	font-size: 150%;
-	margin-top: 0;
-	margin-bottom: 0;
+	font-size: 200%;
+	border-radius: 20px;
+	margin: 10%;
+	margin-right: 25%;
+	margin-left: 25%;
+	background-color: #abcedf;
+	
 
+}
+
+#clairSombre:hover {
+
+	cursor: pointer;
 }
 
 #colones {

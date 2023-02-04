@@ -1,14 +1,10 @@
-<!--
-========================================================================================================================
-=                                                                                                                      =
-=                                             Site créé par Train Guy 53                                               =
-=                                                                                                                      =
-=                                                   voitures.html                                                      =
-=                                                                                                                      =
-=                                                    Janvier 2023                                                      =
-=                                                                                                                      =
-========================================================================================================================
--->
+<!-- =============================================================================================================== -->
+<!--                                                                                                                 -->
+<!--                                          Site créé par Train Guy 53                                             -->
+<!--                                                                                                                 -->
+<!--                                                 voitures.html                                                   -->
+<!--                                                                                                                 -->
+<!-- =============================================================================================================== -->
 
 <!DOCTYPE html>
 <html lang = "fr">
@@ -28,34 +24,30 @@
 
 <li>
 	<a href = "index.html">
-		<img id = "logo" src = "fichiers/icones/trainGuy53.png" alt = "Accueil">
+		<img id = "logo" src = "fichiers/icones/trainGuy53.png" alt = "index.html">
 	</a>
 </li>
 <li>
 	<a href = "locomotives.html">
-		<img id = "sectionGauche" src = "fichiers/icones/locomotivesClair.png" alt = "Locomotives">
+		<img id = "sectionGauche" src = "fichiers/icones/locomotivesClair.png" alt = "locomotives.html">
 		Locomotives
 	</a>
 </li>
 <li>
 	<a href = "voitures.html">
-		<img id = "sectionMilieu" class = "section" src = "fichiers/icones/voituresClair.png" alt = "Voitures">
+		<img id = "sectionMilieu" src = "fichiers/icones/voituresClair.png" alt = "voitures.html">
 		Voitures
 	</a>
 </li>
 <li>
 	<a href = "wagons.html">
-		<img id = "sectionDroite" src = "fichiers/icones/wagonsClair.png" alt = "Wagons">
+		<img id = "sectionDroite" src = "fichiers/icones/wagonsClair.png" alt = "wagons.html">
 		Wagons
 	</a>
 </li>
 <li>
-	<div id = "clairSombre">
-		<input type = "radio" id = "radioClair" name = "radioClairSombre" onclick = "theme('Clair', 'voitures')" checked>
-		<label for = "radioClair">🌞</label>
-		<br>
-		<input type = "radio" id = "radioSombre" name = "radioClairSombre" onclick = "theme('Sombre', 'voitures')">
-		<label for = "radioSombre">🌙</label>
+	<div id = "clairSombre" onclick = "changerDeTheme('voitures')">
+		🌞🌙
 	</div>
 </li>
 

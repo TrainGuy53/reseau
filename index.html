@@ -1,14 +1,10 @@
-<!--
-========================================================================================================================
-=                                                                                                                      =
-=                                             Site créé par Train Guy 53                                               =
-=                                                                                                                      =
-=                                                     index.html                                                       =
-=                                                                                                                      =
-=                                                    Janvier 2023                                                      =
-=                                                                                                                      =
-========================================================================================================================
--->
+<!-- =============================================================================================================== -->
+<!--                                                                                                                 -->
+<!--                                          Site créé par Train Guy 53                                             -->
+<!--                                                                                                                 -->
+<!--                                                  index.html                                                     -->
+<!--                                                                                                                 -->
+<!-- =============================================================================================================== -->
 
 <!DOCTYPE html>
 <html lang = "fr">
@@ -25,6 +21,7 @@
 
 <nav>
 <ul>
+
 <li>
 	<a href = "index.html">
 		<img id = "logo" src = "fichiers/icones/trainGuy53.png" alt = "index.html">
@@ -38,7 +35,7 @@
 </li>
 <li>
 	<a href = "voitures.html">
-		<img id = "sectionMilieu" class = "section" src = "fichiers/icones/voituresClair.png" alt = "voitures.html">
+		<img id = "sectionMilieu" src = "fichiers/icones/voituresClair.png" alt = "voitures.html">
 		Voitures
 	</a>
 </li>
@@ -49,13 +46,11 @@
 	</a>
 </li>
 <li>
-	<div id = "clairSombre">
-		<input type = "radio" id = "radioClair" name = "radioClairSombre" onclick = "theme('Clair', 'index')" checked>
-		<label for = "radioClair">🌞</label>
-		<input type = "radio" id = "radioSombre" name = "radioClairSombre" onclick = "theme('Sombre', 'index')">
-		<label for = "radioSombre">🌙</label>
+	<div id = "clairSombre" onclick = "changerDeTheme('index')">
+		🌞🌙
 	</div>
 </li>
+
 </ul>
 </nav>
 
@@ -77,7 +72,8 @@
 <div id = "colones">
 	<p>
 		Voil&agrave; un plan simplifi&eacute; de mon circuit : il y a deux boucles ind&eacute;pandantes, en bleu et en vert, un pont, en violet, deux croisements, en rouge, et quatre voies de garage, en jaune.<br>
-		<br>
+	</p>
+	<p>
 		Les aiguillages B, I et P sont &eacute;l&eacute;ctrifi&eacute;s et permettent de changer de <strong>B</strong>oucle, d&apos;acc&eacute;der &agrave; l&apos;<strong>I</strong>nt&eacute;rieur, et d&apos;acc&eacute;der au <strong>P</strong>ont.
 	</p>
 	<div id = "circuits">
@@ -96,28 +92,28 @@
 
 <table id = "tableReseauxSociaux">
 	<tr>
-		<th class = "sansBords">
+		<th class = "thSansBords">
 			<a href = "https://www.instagram.com/train_guy_53/" target = "_blank">
 				<img class = "reseauxSociaux" src = "fichiers/reseauxSociaux/instagram.png" alt = "Instagram">
 				<br>
 				&commat;train_guy_53
 			</a>
 		</th>
-		<th class = "sansBords">
+		<th class = "thSansBords">
 			<a href = "https://www.youtube.com/@trainguy53" target = "_blank">
 				<img class = "reseauxSociaux" src = "fichiers/reseauxSociaux/youtube.png" alt = "YouTube">
 				<br>
 				&commat;trainguy53
 			</a>
 		</th>
-		<th class = "sansBords">
+		<th class = "thSansBords">
 			<a href = "https://www.facebook.com/trainguy53/" target = "_blank">
 				<img class = "reseauxSociaux" src = "fichiers/reseauxSociaux/facebook.png" alt = "Facebook">
 				<br>
 				&commat;trainguy53
 			</a>
 		</th>
-		<th class = "sansBords">
+		<th class = "thSansBords">
 			<a href = "https://www.pinterest.fr/trainguy53/" target = "_blank">
 				<img class = "reseauxSociaux" src = "fichiers/reseauxSociaux/pinterest.png" alt = "Pinterest">
 				<br>
@@ -127,12 +123,16 @@
 	</tr>
 </table>
 
-<a href = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2Fcss.css" target = "_blank">
-	<img class = "validation" src = "fichiers/validation/css.png" alt = "CSS Valide !">
-</a>
 <a href = "https://validator.w3.org/nu/?doc=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2Findex.html" target = "_blank">
 	<img class = "validation" src = "fichiers/validation/html.png" alt = "HTML Valide !">
 </a>
+<a href = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2Fcss.css" target = "_blank">
+	<img class = "validation" src = "fichiers/validation/css.png" alt = "CSS Valide !">
+</a>
+<!-- <a href = "https://" target = "_blank">
+	<img class = "validation" src = "fichiers/validation/js.png" alt = "JS Valide !">
+</a> -->
+
 
 </body>
 </html>
