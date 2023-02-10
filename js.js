@@ -1,14 +1,12 @@
 // ================================================================================================================== //
 //                                                                                                                    //
-//                                            Site créé par Train Guy 53                                              //
+//                                                    Train Guy 53                                                    //
 //                                                                                                                    //
 //                                                       js.js                                                        //
 //                                                                                                                    //
-//                                                   Janvier 2023                                                     //
-//                                                                                                                    //
 // ================================================================================================================== //
 
-var theme; // enregistre le thème actuel
+var theme = "Clair"; // enregistre le thème actuel
 
 function changerDeTheme(page) { // change la source des images pour les thèmes
 
