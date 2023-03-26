@@ -2,12 +2,9 @@
 /*                                                                                                                    */
 /*                                                    Train Guy 53                                                    */
 /*                                                                                                                    */
-/*                                                       css.css                                                      */
-/*                                                                                                                    */
 /* ================================================================================================================== */
 
 /*
-
 ========================================================================================================================
 	couleurs (background, background-color, border, box-shadow, color, text-shadow)
 ========================================================================================================================
@@ -48,85 +45,6 @@
 		#ffffff
 			ombre du texte de la page							<body>
 			ombre du texte des titres de niveau 1				<h1>
-
-========================================================================================================================
-	polices (font-family)
-========================================================================================================================
-
-		bahnschrift
-			texte de la page									<body>
-
-		serif
-			titres de niveau 1									<h1>
-
-========================================================================================================================
-	tailles de polices (font-size)
-========================================================================================================================
-
-		200%
-			texte de la page									<body>
-			texte de l'élément									"clairSombre"
-
-		80%
-			texte des tableaux									<table>
-
-		50%
-			texte des menus										<nav>
-
-========================================================================================================================
-	marges (margin, margin-top, margin-bottom, margin-left, margin-right)
-========================================================================================================================
-
-		5%
-			marge de la page									<body>
-
-		0
-			marge haute des images								<img>
-			marge basse de l'élément							"sectionGauche"
-			marge basse de l'élément							"sectionMilieu"
-			marge basse de l'élément							"sectionDroite"
-
-		-8px
-			marge basse des images								<img>
-
-		3%
-			marge des menus										<nav>
-
-		1%
-			marge haute des liens de menus						<li>
-
-		-4%
-			marge haute de l'élément							"logo"
-
-		auto
-			marge droite de l'élément							"temps"
-			marge gauche de l'élément							"temps"
-
-========================================================================================================================
-	tailles (width)
-========================================================================================================================
-
-		100%
-			taille des images									<img>
-			taille des tableaux									<table>
-
-		80%
-			taille de l'élément									"tgv"
-
-		50%
-			taille de l'élément									"temps"
-			taille de l'élément									"logo"
-
-		25%
-			taille des éléments de classe						"reseauxSociaux"
-
-		20%
-			taille des liens									<li>
-
-		5%
-			taille des éléménts de classe						"validation"
-*/
-
 /*
 ========================================================================================================================
 	<.../>
@@ -236,11 +154,15 @@ th {
 ul {
 
 	list-style-type: none;
-	/* je ne comprends pas bien ce que cela fait mais tout est necessaire */
 	content: "";
 	display: table;
 	clear: both;
 
+}
+
+fieldset {
+
+	margin-top: 2%;
 }
 
 /*
@@ -296,21 +218,24 @@ ul {
 ========================================================================================================================
 */
 
-#clairSombre {
+#boutonClairSombre {
 
-	font-size: 200%;
-	border-radius: 20px;
-	margin: 10%;
-	margin-right: 25%;
-	margin-left: 25%;
-	background-color: #abcedf;
-	
+	font-size: 250%;
+	border: 0;
+	margin: 5%;
+	background-color: transparent;
 
 }
 
-#clairSombre:hover {
+#boutonClairSombre:hover {
 
 	cursor: pointer;
+}
+
+#boutonClair {
+
+	display: none;
+
 }
 
 #colones {
@@ -318,7 +243,6 @@ ul {
 	column-count: 2;
 
 }
-
 
 #detaile, #circuits:hover #simple {
 
@@ -388,3 +312,9 @@ ul {
 	margin-top: -4%;
 
 }
+
+/* ================================================================================================================== */
+/*                                                                                                                    */
+/*                                                    Train Guy 53                                                    */
+/*                                                                                                                    */
+/* ================================================================================================================== */
