@@ -89,6 +89,8 @@
 	</div>
 </div>
 
+<p>La date d'aujourd'hui est <?php echo date('d/m/Y'); ?>. Il est <?php echo date('H:i:s'); ?> actuellement.</p>
+
 <p>
 	&darr; Suivez moi sur les r&eacute;seaux &darr;
 </p>
