@@ -6,7 +6,7 @@
 
 var theme = "Clair"; // enregistre le thème actuel
 
-function changerDeTheme(page) { // change la source des images pour les thèmes
+function changerDeTheme(page) { // change la source des images pour les thèmes, en fonction de la page
 
 	// "theme" vaut "Clair" ou "Sombre" (majuscules importantes)
 	// "page" vaut "index", "locomotives", "voitures" ou "wagons"
@@ -45,22 +45,6 @@ function changerDeTheme(page) { // change la source des images pour les thèmes
 	document.getElementById("sectionGauche").src = "fichiers/icones/locomotives" + theme + ".png";
 	document.getElementById("sectionMilieu").src = "fichiers/icones/voitures" + theme + ".png";
 	document.getElementById("sectionDroite").src = "fichiers/icones/wagons" + theme + ".png";
-
-}
-
-
-// Vérifie si le thème est déjà stocké en sessionStorage
-if (sessionStorage.getItem('theme') === 'Sombre') {
-
-		document.getElementById("sectionGauche").src = "fichiers/icones/locomotives" + theme + ".png";
-		document.getElementById("sectionMilieu").src = "fichiers/icones/voitures" + theme + ".png";
-		document.getElementById("sectionDroite").src = "fichiers/icones/wagons" + theme + ".png";
-
-} else { // Si le thème n'est pas stocké ou s'il est clair
-
-		document.getElementById("sectionGauche").src = "fichiers/icones/locomotives" + "Clair" + ".png";
-		document.getElementById("sectionMilieu").src = "fichiers/icones/voitures" + "Clair" + ".png";
-		document.getElementById("sectionDroite").src = "fichiers/icones/wagons" + "Clair" + ".png";
 
 }
 
