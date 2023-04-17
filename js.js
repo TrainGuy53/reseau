@@ -20,10 +20,10 @@ function changerDeTheme(pageActuelle) {
 	}
 	switch (window.parent.document.title) { // récupère le nom de la page parent
 		case 'Accueil':
-			document.getElementById("tgv").src = "fichiers/tgv" + theme + ".gif";
+			window.parent.document.getElementById("tgv").src = "fichiers/tgv" + theme + ".gif";
 			break;
 		case 'Locomotives':
-			document.getElementById("temps").src = "fichiers/temps" + theme + ".png";
+			window.parent.document.getElementById("temps").src = "fichiers/temps" + theme + ".png";
 			break;
 	}
 	document.getElementById("sectionGauche").src = "fichiers/icones/locomotives" + theme + ".png";
