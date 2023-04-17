@@ -6,7 +6,7 @@
 
 var theme = "Clair";
 
-function changerDeTheme(pageActuelle) {
+function changerDeTheme() {
 
 	"use strict";
 	if (theme == 'Sombre') {
