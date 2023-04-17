@@ -4,7 +4,7 @@
 //                                                                                                                   //
 // ================================================================================================================= //
 
-var theme = "Clair"; // "theme" vaut "Clair" ou "Sombre" (majuscules importantes)
+var theme = "Clair";
 
 function changerDeTheme(pageActuelle) {
 
@@ -26,9 +26,10 @@ function changerDeTheme(pageActuelle) {
 	// 		window.parent.document.getElementById("temps").src = "fichiers/temps" + theme + ".png";
 	// 		break;
 	// }
-	document.getElementById("sectionGauche").src = "fichiers/nav/locomotives" + theme + ".png";
-	document.getElementById("sectionMilieu").src = "fichiers/nav/voitures" + theme + ".png";
-	document.getElementById("sectionDroite").src = "fichiers/nav/wagons" + theme + ".png";
+	document.getElementsByClassName("section")[0].src = "fichiers/nav/locomotives" + theme + ".png";
+	document.getElementsByClassName("section")[1].src = "fichiers/nav/voitures" + theme + ".png";
+	document.getElementsByClassName("section")[2].src = "fichiers/nav/wagons" + theme + ".png";
+	document.getElementsByClassName("section")[3].src = "fichiers/nav/gares" + theme + ".png";
 
 }
 
