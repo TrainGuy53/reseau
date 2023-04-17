@@ -18,17 +18,17 @@ function changerDeTheme(pageActuelle) {
 		document.getElementById("boutonClair").style.display = "block";
 		document.getElementById("boutonSombre").style.display = "none";
 	}
-	switch (window.parent.document.title) { // récupère le nom de la page parent
-		case 'Accueil':
-			window.parent.document.getElementById("tgv").src = "fichiers/tgv" + theme + ".gif";
-			break;
-		case 'Locomotives':
-			window.parent.document.getElementById("temps").src = "fichiers/temps" + theme + ".png";
-			break;
-	}
-	document.getElementById("sectionGauche").src = "fichiers/icones/locomotives" + theme + ".png";
-	document.getElementById("sectionMilieu").src = "fichiers/icones/voitures" + theme + ".png";
-	document.getElementById("sectionDroite").src = "fichiers/icones/wagons" + theme + ".png";
+	// switch (window.parent.document.title) { // récupère le nom de la page parent
+	// 	case 'Accueil':
+	// 		window.parent.document.getElementById("tgv").src = "fichiers/tgv" + theme + ".gif";
+	// 		break;
+	// 	case 'Locomotives':
+	// 		window.parent.document.getElementById("temps").src = "fichiers/temps" + theme + ".png";
+	// 		break;
+	// }
+	document.getElementById("sectionGauche").src = "fichiers/nav/locomotives" + theme + ".png";
+	document.getElementById("sectionMilieu").src = "fichiers/nav/voitures" + theme + ".png";
+	document.getElementById("sectionDroite").src = "fichiers/nav/wagons" + theme + ".png";
 
 }
 
