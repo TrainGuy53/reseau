@@ -4,21 +4,21 @@
 //                                                                                                                   //
 // ================================================================================================================= //
 
-var theme = "Clair";
+var theme = "clair";
 
 function changerDeTheme() {
 
 	"use strict";
-	if (theme == 'Sombre') {
-		theme = 'Clair';
+	if (theme == 'sombre') {
+		theme = 'clair';
 		document.getElementById("boutonClair").style.display = "none";
 		document.getElementById("boutonSombre").style.display = "block";
 	} else {
-		theme = 'Sombre';
+		theme = 'sombre';
 		document.getElementById("boutonClair").style.display = "block";
 		document.getElementById("boutonSombre").style.display = "none";
 	}
-	switch (window.parent.document.title) { // récupère le nom de la page parent
+	switch (window.parent.document.title) {
 		case 'Accueil':
 			window.parent.document.getElementById("tgv").src = "fichiers/tgv" + theme + ".gif";
 			break;
@@ -26,10 +26,9 @@ function changerDeTheme() {
 			window.parent.document.getElementById("temps").src = "fichiers/temps" + theme + ".png";
 			break;
 	}
-	document.getElementsByClassName("section")[0].src = "fichiers/nav/locomotives" + theme + ".png";
-	document.getElementsByClassName("section")[1].src = "fichiers/nav/voitures" + theme + ".png";
-	document.getElementsByClassName("section")[2].src = "fichiers/nav/wagons" + theme + ".png";
-	document.getElementsByClassName("section")[3].src = "fichiers/nav/gares" + theme + ".png";
+	for (var i = document.getElementsByClassName("fond").length - 1; i >= 0; i--) {
+		document.getElementsByClassName("fond")[i].src = "fichiers/nav/" + theme + "/" + i + ".png";
+	}
 
 }
 

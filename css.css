@@ -25,6 +25,8 @@ body {
 	text-align: center;
 }
 
+div {position: relative;}
+
 h1 {
 	font-family: serif;
 	text-shadow: 2px 2px 2px #ffffff;
@@ -34,13 +36,12 @@ iframe {
 	border: 0;
 	width: 110%;
 	margin-left: -5%;
-	aspect-ratio: 5266 / 1000;
 	position: sticky;
-	top: -8%;
+	top: 0;
+	aspect-ratio: 7;
 	opacity: 90%;
-/*	box-shadow: 3px 3px 3px #000000;*/
-/*	border-radius: 20px;*/
-/*	background: transparent;*/
+	box-shadow: 3px 3px 3px #000000;
+	border-radius: 20px;
 }
 
 img {
@@ -54,6 +55,8 @@ li {
 	float: left;
 	width: 15%;
 }
+
+nav {font-size: 50%;}
 
 p {
 	background-color: #bbbbbb;
@@ -93,14 +96,17 @@ ul {list-style-type: none;}
 
 .circuit {box-shadow: 0 0 0;}
 
+.fond, .section {
+	border-radius: 0;
+	margin-bottom: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
 .reseauxSociaux {
 	width: 25%;
 	box-shadow: 0 0 0;
-}
-
-.section {
-	border-radius: 0;
-	margin-bottom: 0;
 }
 
 .sombre {
@@ -141,14 +147,14 @@ ul {list-style-type: none;}
 #detaile, #circuits:hover #simple {display: none;}
 #circuits:hover #detaile {display: block;}
 
-#droite {
+#droite img {
 	border-radius: 0;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
 	margin-bottom: 0;
 }
 
-#gauche {
+#gauche img {
 	border-radius: 0;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
@@ -178,19 +184,6 @@ ul {list-style-type: none;}
 	width: 50%;
 	margin-top: -4%;
 }
-
-#nav111 {
-	box-shadow: 3px 3px 3px #000000;
-	border-radius: 20px;
-}
-
-
-
-
-/*		body {background: transparent;}*/
-/*		li {background-color: blue; font-size: 75%;}*/
-/*		div {background-color: red;}*/
-
 
 /* ================================================================================================================= */
 /*                                                                                                                   */
