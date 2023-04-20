@@ -5,6 +5,7 @@
 // ================================================================================================================= //
 
 var theme = "clair";
+const titreDeLaPageParent = window.parent.document.title;
 
 function changerDeTheme() {
 
@@ -18,7 +19,7 @@ function changerDeTheme() {
 		document.getElementById("clair").style.display = "block";
 		document.getElementById("sombre").style.display = "none";
 	}
-	switch (window.parent.document.title) {
+	switch (titreDeLaPageParent) {
 		case "Accueil":
 			window.parent.document.getElementById("tgv").src = "images/tgv" + theme + ".gif";
 			break;
@@ -34,26 +35,18 @@ function changerDeTheme() {
 
 function validation(langage) {
 
+	"use strict";
+	var url = "https://validator.w3.org/nu/?doc=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2F";
+	const pages = {
+		"Accueil": "index.html",
+		"Locomotives": "locomotives.html",
+		"Voitures": "voitures.html",
+		"Wagons": "wagons.html",
+		"Gares": "gares.html"
+	};
 	switch (langage) {
 		case "html":
-			switch (window.parent.document.title) {
-				case "Accueil":
-					window.parent.location.href = "https://validator.w3.org/nu/?doc=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2index.html";
-					break;
-				case "Locomotives":
-					window.parent.location.href = "https://validator.w3.org/nu/?doc=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2locomotives.html";
-					break;
-				case "Voitures":
-					window.parent.location.href = "https://validator.w3.org/nu/?doc=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2voitures.html";
-					break;
-				case "Wagons":
-					window.parent.location.href = "https://validator.w3.org/nu/?doc=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2wagons.html";
-					break;
-				case "Gares":
-					window.parent.location.href = "https://validator.w3.org/nu/?doc=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2gares.html";
-					break;
-			}
-			break;
+			if (titreDeLaPageParent in pages) {window.parent.location.href = url + pages[titreDeLaPageParent];}''
 		case "css":
 			window.parent.location.href = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2Fcss.css";
 			break;
