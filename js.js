@@ -5,12 +5,20 @@
 // ================================================================================================================= //
 
 var theme = "clair";
-const titreDeLaPageParent = window.parent.document.title;
+var titreDeLaPageParent = window.parent.document.title;
+var url = "https://validator.w3.org/nu/?doc=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2F";
+var pages = {
+	"Accueil": "index.html",
+	"Locomotives": "locomotives.html",
+	"Voitures": "voitures.html",
+	"Wagons": "wagons.html",
+	"Gares": "gares.html"
+};
 
 function changerDeTheme() {
 
 	"use strict";
-	if (theme == "sombre") {
+	if (theme === "sombre") {
 		theme = "clair";
 		document.getElementById("clair").style.display = "none";
 		document.getElementById("sombre").style.display = "block";
@@ -36,27 +44,19 @@ function changerDeTheme() {
 function validation(langage) {
 
 	"use strict";
-	var url = "https://validator.w3.org/nu/?doc=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2F";
-	const pages = {
-		"Accueil": "index.html",
-		"Locomotives": "locomotives.html",
-		"Voitures": "voitures.html",
-		"Wagons": "wagons.html",
-		"Gares": "gares.html"
-	};
 	switch (langage) {
 		case "html":
-			if (titreDeLaPageParent in pages) {window.parent.location.href = url + pages[titreDeLaPageParent];}''
+			if (titreDeLaPageParent in pages) {window.parent.location.href = url + pages[titreDeLaPageParent];}
+			break;
 		case "css":
 			window.parent.location.href = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2Fcss.css";
 			break;
 		// case "js":
-		// 	window.parent.location.href = "";
-		// 	break;
+		//  window.parent.location.href = "";
+		//  break;
 	}
 
 }
-
 
 // ================================================================================================================= //
 //                                                                                                                   //
