@@ -18,14 +18,14 @@ function changerDeTheme() {
 		document.getElementById("clair").style.display = "block";
 		document.getElementById("sombre").style.display = "none";
 	}
-	// switch (window.parent.document.title) {
-	// 	case "Accueil":
-	// 		window.parent.document.getElementById("tgv").src = "images/tgv" + theme + ".gif";
-	// 		break;
-	// 	case "Locomotives":
-	// 		window.parent.document.getElementById("temps").src = "images/temps" + theme + ".png";
-	// 		break;
-	// }
+	switch (window.parent.document.title) {
+		case "Accueil":
+			window.parent.document.getElementById("tgv").src = "images/tgv" + theme + ".gif";
+			break;
+		case "Locomotives":
+			window.parent.document.getElementById("temps").src = "images/temps" + theme + ".png";
+			break;
+	}
 	for (var i = document.getElementsByClassName("imgFond").length - 1; i >= 0; i--) {
 		document.getElementsByClassName("imgFond")[i].src = "nav/" + theme + "/" + i + ".png";
 	}
