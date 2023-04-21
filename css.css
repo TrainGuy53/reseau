@@ -41,6 +41,7 @@ iframe {
 	opacity: 90%;
 	box-shadow: 3px 3px 3px #000000;
 	border-radius: 20px;
+	z-index: 2;
 }
 
 img {
