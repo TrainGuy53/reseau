@@ -29,10 +29,10 @@ function changerDeTheme() {
 	}
 	switch (titreDeLaPageParent) {
 		case "Accueil":
-			window.parent.document.getElementById("tgv").src = "images/tgv" + theme + ".gif";
+			window.parent.document.getElementById("tgv").src = "index/tgv/" + theme + ".gif";
 			break;
 		case "Locomotives":
-			window.parent.document.getElementById("temps").src = "images/temps" + theme + ".png";
+			window.parent.document.getElementById("temps").src = "locomotives/temps/" + theme + ".png";
 			break;
 	}
 	for (var i = document.getElementsByClassName("imgFond").length - 1; i >= 0; i--) {

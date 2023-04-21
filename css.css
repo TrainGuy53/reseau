@@ -17,7 +17,7 @@ a {
 a:hover {color: #7a49a5;}
 
 body {
-	background: #5a8787 url("images/rail.png") repeat-y left top;
+	background: #5a8787 url("commun/rail.png") repeat-y left top;
 	margin: 5%;
 	text-shadow: 1px 1px 1px #ffffff;
 	font-family: bahnschrift;
