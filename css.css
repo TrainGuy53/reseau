@@ -184,14 +184,14 @@ ul {list-style-type: none;}
 	width: 80%;
 }
 
-#validation {
+#iframeValidation {
 	aspect-ratio: 61 / 10;
 	opacity: 100%;
 	box-shadow: 0 0 0;
 	float: left;
 }
 
-#validaion {
+#tableValidation {
 	border: 0;
 	width: 25%;
 	margin: auto;
@@ -199,7 +199,7 @@ ul {list-style-type: none;}
 	background: transparent;
 }
 
-#validaion td {
+#tableValidation td {
 	border: 0;
 	box-shadow: 0 0;
 	padding: 5%;
