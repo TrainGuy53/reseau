@@ -5,9 +5,9 @@
 // ================================================================================================================= //
 
 var themeDeLaPage = "clair";
-var titreDeLaPageParent = window.parent.document.title;
-var url = "https://validator.w3.org/nu/?doc=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2F";
-var pages = {
+const titreDeLaPageParent = window.parent.document.title;
+const url = "https://validator.w3.org/nu/?doc=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2F";
+const pages = {
 	"Accueil": "index.html",
 	"Locomotives": "locomotives.html",
 	"Voitures": "voitures.html",
@@ -16,24 +16,24 @@ var pages = {
 };
 const pause = 1500; // milisecondes
 
-function changerDeThemeDeLaPage() {
+function changerLeThemeDeLaPage() {
 
 	"use strict";
 	if (themeDeLaPage === "sombre") {
 		themeDeLaPage = "clair";
-		document.getElementById("clair").style.display = "none";
-		document.getElementById("sombre").style.display = "block";
+		clair.style.display = "none";
+		sombre.style.display = "block";
 	} else {
 		themeDeLaPage = "sombre";
-		document.getElementById("clair").style.display = "block";
-		document.getElementById("sombre").style.display = "none";
+		clair.style.display = "block";
+		sombre.style.display = "none";
 	}
 	switch (titreDeLaPageParent) {
 		case "Accueil":
-			window.parent.document.getElementById("tgv").src = "index/tgv/" + themeDeLaPage + ".gif";
+			window.parent.tgv.src = "index/tgv/" + themeDeLaPage + ".gif";
 			break;
 		case "Locomotives":
-			window.parent.document.getElementById("temps").src = "locomotives/temps/" + themeDeLaPage + ".png";
+			window.parent.temps.src = "locomotives/temps/" + themeDeLaPage + ".png";
 			break;
 	}
 	for (var i = document.getElementsByClassName("imgFond").length - 1; i >= 0; i--) {
@@ -52,36 +52,25 @@ function validation(langage) {
 		case "css":
 			window.parent.location.href = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2Fcss.css";
 			break;
-		// case "js":
-		//  window.parent.location.href = "";
-		//  break;
+		case "js":
+			window.parent.location.href = "";
+			break;
 	}
 
 }
 
-function basculerImages() { // ne marche pas :(
+function basculerImages() {
 
-	"use strict";
-	const imagesReseau = document.getElementsByClassName("imagesResau"); // apparement, cela ne selectionne pas les images...
-	const imagesInternet = document.getElementsByClassName("imagesInternet"); // idem
-	for (var i = imagesReseau.length - 1; i >= 0; i--) {
-		imagesReseau[i].style.display = "block";
-		imagesInternet[i].style.display = "none";
-	}
+	const imagesReseau = document.querySelectorAll('.imagesReseau');
+	const imagesInternet = document.querySelectorAll('.imagesInternet');
+	
+	imagesReseau.forEach(img => img.style.display = 'block');
+	imagesInternet.forEach(img => img.style.display = 'none');
+	
 	setInterval(
-		function() {
-			console.log(imagesReseau);
-			if (imagesReseau[0].style.display === "none") {
-				for (var i = imagesReseau.length - 1; i >= 0; i--) {
-					imagesReseau[i].style.display = "block";
-					imagesInternet.style.display = "none";
-				}
-			} else {
-				for (var i = imagesReseau.length - 1; i >= 0; i--) {
-					imagesReseau[i].style.display = "block";
-					imagesInternet[i].style.display = "none";
-				}
-			}
+		() => {
+			imagesReseau.forEach(img => img.style.display = img.style.display === 'none' ? 'block' : 'none');
+			imagesInternet.forEach(img => img.style.display = img.style.display === 'none' ? 'block' : 'none');
 		},
 		pause
 	);
