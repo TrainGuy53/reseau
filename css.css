@@ -110,6 +110,11 @@ ul {list-style-type: none;}
 	left: 0;
 }
 
+.tdImage {
+	border: 0;
+	box-shadow: 0 0;
+}
+
 .imgReseauxSociaux {
 	width: 25%;
 	box-shadow: 0 0 0;
@@ -160,10 +165,7 @@ ul {list-style-type: none;}
 	margin-bottom: 0;
 }
 
-#icone {
-	width: 50%;
-	margin-top: -4%;
-}
+#logo {width: 50%;}
 
 #reseauxSociaux {
 	border: 0;
