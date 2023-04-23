@@ -14,7 +14,7 @@ const pages = {
 	"Wagons": "wagons.html",
 	"Maquettes": "maquettes.html"
 };
-const pause = 1500; // milisecondes
+const pause = 3000; // milisecondes
 
 function changerLeThemeDeLaPage() {
 
@@ -70,7 +70,7 @@ function basculerImages() {
 			imgReseau.forEach(img => img.style.display = img.style.display === "none" ? "block" : "none");
 			imgInternet.forEach(img => img.style.display = img.style.display === "none" ? "block" : "none");
 		},
-		pause * 2
+		pause
 	);
 
 }
