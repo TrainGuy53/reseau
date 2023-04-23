@@ -29,10 +29,10 @@ function changerLeThemeDeLaPage() {
 		sombre.style.display = "none";
 	}
 	switch (titreDeLaPageParent) {
-		case "Accueil":
+		case "Accueil – Train Guy 53":
 			window.parent.tgv.src = "index/tgv/" + themeDeLaPage + ".gif";
 			break;
-		case "Locomotives":
+		case "Locomotives – Train Guy 53":
 			window.parent.temps.src = "locomotives/temps/" + themeDeLaPage + ".png";
 			break;
 	}
@@ -61,18 +61,16 @@ function validation(langage) {
 
 function basculerImages() {
 
-	const imagesReseau = document.querySelectorAll('.imagesReseau');
-	const imagesInternet = document.querySelectorAll('.imagesInternet');
-	
-	imagesReseau.forEach(img => img.style.display = 'block');
-	imagesInternet.forEach(img => img.style.display = 'none');
-	
+	const imgReseau = document.querySelectorAll(".imgReseau");
+	const imgInternet = document.querySelectorAll(".imgInternet");
+	imgReseau.forEach(img => img.style.display = "block");
+	imgInternet.forEach(img => img.style.display = "none");
 	setInterval(
 		() => {
-			imagesReseau.forEach(img => img.style.display = img.style.display === 'none' ? 'block' : 'none');
-			imagesInternet.forEach(img => img.style.display = img.style.display === 'none' ? 'block' : 'none');
+			imgReseau.forEach(img => img.style.display = img.style.display === "none" ? "block" : "none");
+			imgInternet.forEach(img => img.style.display = img.style.display === "none" ? "block" : "none");
 		},
-		pause
+		pause * 2
 	);
 
 }
