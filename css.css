@@ -114,7 +114,7 @@ ul {list-style-type: none;}
 
 .divValidation:hover {cursor: pointer;}
 
-.imgCircuit {filter: drop-shadow(0 0 0);}
+.imgCircuit, .imgSection, #tgv {filter: drop-shadow(0 0 0);}
 
 .imgFond, .imgSection {
 	border-radius: 0;
@@ -137,13 +137,12 @@ ul {list-style-type: none;}
 	box-shadow: 0 0;
 }
 
-.imgSection {filter: drop-shadow(0 0 0);}
-
 .imgValidation {border-radius: 0;}
 
 /* ================================================================================================================= */
 /*	id = ...*/
 /* ================================================================================================================= */
+
 
 #clairSombre {
 	font-size: 250%;
@@ -157,6 +156,10 @@ ul {list-style-type: none;}
 #clairSombre:hover {cursor: pointer;}
 #colones {column-count: 2;}
 #detaile, #circuits:hover #simple {display: none;}
+
+#fond, #tgv {
+	position: absolute;
+}
 
 #logo {width: 50%;}
 
@@ -173,8 +176,7 @@ ul {list-style-type: none;}
 	margin: auto;
 }
 
-#tgv {
-	box-shadow: 3px 3px 3px #000000;
+#divTgv {
 	width: 80%;
 }
 
