@@ -50,6 +50,18 @@ img {
 	filter: drop-shadow(3px 3px 1px #000000);
 }
 
+#droite img {
+	border-radius: 0;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+#gauche img {
+	border-radius: 0;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
 li {
 	float: left;
 	width: 15%;
@@ -68,6 +80,8 @@ p {
 	padding: 1%;
 }
 
+span {font-family: consolas;}
+
 table {
 	background-color: #5a8787;
 	border: 3px #4974a5 outset;
@@ -84,11 +98,13 @@ td {
 }
 
 th {
-	color: #4974a5;
 	border: 2px #4974a5 outset;
 	border-radius: 15px;
 	box-shadow: 1px 1px 1px #000000;
+	background-color: #4974a5;
 }
+
+#reseauxSociaux th {background-color: transparent;}
 
 ul {list-style-type: none;}
 
@@ -123,11 +139,6 @@ ul {list-style-type: none;}
 
 .imgSection {filter: drop-shadow(0 0 0);}
 
-.thSombre {
-	background-color: #568f8f;
-	border: 2px #4974a5 inset;
-}
-
 .imgValidation {border-radius: 0;}
 
 /* ================================================================================================================= */
@@ -146,18 +157,6 @@ ul {list-style-type: none;}
 #clairSombre:hover {cursor: pointer;}
 #colones {column-count: 2;}
 #detaile, #circuits:hover #simple {display: none;}
-
-#droite img {
-	border-radius: 0;
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
-}
-
-#gauche img {
-	border-radius: 0;
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
-}
 
 #logo {width: 50%;}
 
