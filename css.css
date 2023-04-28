@@ -105,7 +105,6 @@ th {
 }
 
 #reseauxSociaux th {background-color: transparent;}
-
 ul {list-style-type: none;}
 
 /* ================================================================================================================= */
@@ -113,7 +112,6 @@ ul {list-style-type: none;}
 /* ================================================================================================================= */
 
 .divValidation:hover {cursor: pointer;}
-
 .imgCircuit, .imgSection, #tgv {filter: drop-shadow(0 0 0);}
 
 .imgFond, .imgSection {
@@ -156,11 +154,7 @@ ul {list-style-type: none;}
 #clairSombre:hover {cursor: pointer;}
 #colones {column-count: 2;}
 #detaile, #circuits:hover #simple {display: none;}
-
-#fond, #tgv {
-	position: absolute;
-}
-
+#fond, #tgv {position: absolute;}
 #logo {width: 50%;}
 
 #reseauxSociaux {
@@ -178,6 +172,8 @@ ul {list-style-type: none;}
 
 #divTgv {
 	width: 80%;
+	left: -30%;
+	padding-bottom: 10%;
 }
 
 #iframeValidation {
