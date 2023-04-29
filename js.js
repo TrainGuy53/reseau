@@ -14,11 +14,11 @@ const urlHtml = "https://validator.w3.org/nu/?doc=https%3A%2F%2Ftrainguy53.githu
 const urlCss = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2Fcss.css";
 const urlJs = "https://js.js";
 const pages = {
-	"Accueil": "index.html",
-	"Locomotives": "locomotives.html",
-	"Voitures": "voitures.html",
-	"Wagons": "wagons.html",
-	"Maquettes": "maquettes.html"
+	"Accueil - Train Guy 53": "index.html",
+	"Locomotives - Train Guy 53": "locomotives.html",
+	"Voitures - Train Guy 53": "voitures.html",
+	"Wagons - Train Guy 53": "wagons.html",
+	"Maquettes - Train Guy 53": "maquettes.html"
 };
 const pause = 3000; // milisecondes
 
@@ -57,13 +57,13 @@ function validation(langage) {
 	"use strict";
 	switch (langage) {
 		case "html":
-			if (titreDeLaPageParent in pages) {window.parent.location.href = urlHtml + pages[titreDeLaPageParent];}
+			if (titreDeLaPageParent in pages) {window.open(urlHtml + pages[titreDeLaPageParent], "_blank")}
 			break;
 		case "css":
-			window.parent.location.href = urlCss;
+			window.open(urlCss, "_blank");
 			break;
 		case "js":
-			window.parent.location.href = urlJs;
+			window.open(urlJs, "_blank");
 			break;
 	}
 

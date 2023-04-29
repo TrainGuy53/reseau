@@ -97,6 +97,12 @@ td {
 	box-shadow: 1px 1px 1px #000000;
 }
 
+#tableValidation td {
+	border: 0;
+	box-shadow: 0 0;
+	padding: 5%;
+}
+
 th {
 	border: 2px #4974a5 outset;
 	border-radius: 15px;
@@ -191,12 +197,6 @@ ul {list-style-type: none;}
 	margin: auto;
 	box-shadow: 0 0;
 	background: transparent;
-}
-
-#tableValidation td {
-	border: 0;
-	box-shadow: 0 0;
-	padding: 5%;
 }
 
 /* ================================================================================================================= */
