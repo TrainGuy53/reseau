@@ -8,19 +8,19 @@
 	// variables
 // ================================================================================================================= //
 
+const pause = 3000; // milisecondes
 var themeDeLaPage = "clair";
 const titreDeLaPageParent = window.parent.document.title;
 const urlHtml = "https://validator.w3.org/nu/?doc=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2F";
 const urlCss = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftrainguy53.github.io%2Freseau";
 const urlJs = "https://js.js";
 const pages = {
-	"Accueil - Train Guy 53": "index.html",
-	"Locomotives - Train Guy 53": "locomotives.html",
-	"Voitures - Train Guy 53": "voitures.html",
-	"Wagons - Train Guy 53": "wagons.html",
-	"Maquettes - Train Guy 53": "maquettes.html"
+	"Accueil – Train Guy 53": "index.html",
+	"Locomotives – Train Guy 53": "locomotives.html",
+	"Voitures – Train Guy 53": "voitures.html",
+	"Wagons – Train Guy 53": "wagons.html",
+	"Maquettes – Train Guy 53": "maquettes.html"
 };
-const pause = 3000; // milisecondes
 
 // ================================================================================================================= //
 	// fonctions
