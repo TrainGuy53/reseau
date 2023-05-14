@@ -11,9 +11,6 @@
 const pause = 3000; // milisecondes
 var themeDeLaPage = "clair";
 const titreDeLaPageParent = window.parent.document.title;
-const urlHtml = "https://validator.w3.org/nu/?doc=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2F";
-const urlCss = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftrainguy53.github.io%2Freseau";
-const urlJs = "https://js.js";
 const pages = {
 	"Accueil – Train Guy 53": "index.html",
 	"Locomotives – Train Guy 53": "locomotives.html",
@@ -52,6 +49,10 @@ function changerLeThemeDeLaPage() {
 
 }
 
+const urlHtml = "https://validator.w3.org/nu/?doc=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2F";
+const urlCss = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftrainguy53.github.io%2Freseau";
+const urlJs = "https://js.js";
+
 function validation(langage) {
 
 	"use strict";
@@ -72,16 +73,31 @@ function validation(langage) {
 function basculerImages() {
 
 	const imgReseau = document.querySelectorAll(".imgReseau");
-	const imgInternet = document.querySelectorAll(".imgInternet");
+	const imgWikipediaThumb = document.querySelectorAll(".imgWikipediaThumb");
 	imgReseau.forEach(img => img.style.display = "block");
-	imgInternet.forEach(img => img.style.display = "none");
+	imgWikipediaThumb.forEach(img => img.style.display = "none");
 	setInterval(
 		() => {
 			imgReseau.forEach(img => img.style.display = img.style.display === "none" ? "block" : "none");
-			imgInternet.forEach(img => img.style.display = img.style.display === "none" ? "block" : "none");
+			imgWikipediaThumb.forEach(img => img.style.display = img.style.display === "none" ? "block" : "none");
 		},
 		pause
 	);
+
+}
+
+function URLWikipedia() {
+
+	const urlThumb = "https://upload.wikimedia.org/wikipedia/commons/thumb/";
+	const imgThumb = document.getElementsByClassName("imgWikipediaThumb");
+	for (var i = imgThumb.length - 1; i >= 0; i--) {
+		imgThumb[i].src = urlThumb + imgThumb[i].src.split("file:///C:/Users/artus/Documents/Train%20Guy%2053/reseau/")[1];
+	}
+	const urlWiki = "https://fr.wikipedia.org/wiki/";
+	var wiki = document.getElementsByClassName("wiki");
+		for (var i = wiki.length - 1; i >= 0; i--) {
+		wiki[i].href = urlWiki + wiki[i].href.split("file:///C:/Users/artus/Documents/Train%20Guy%2053/reseau/")[1];
+	}
 
 }
 
