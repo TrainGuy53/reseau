@@ -71,11 +71,11 @@ function validation(langage) {
 }
 
 const pause = 3000; // milisecondes
-const imgReseau = document.querySelectorAll(".imgReseau");
-const imgWikipediaThumb = document.querySelectorAll(".imgWikipediaThumb");
 
 function basculerImages() {
 
+	const imgReseau = document.querySelectorAll(".imgReseau");
+	const imgWikipediaThumb = document.querySelectorAll(".imgWikipediaThumb");
 	imgReseau.forEach(img => img.style.display = "block");
 	imgWikipediaThumb.forEach(img => img.style.display = "none");
 	setInterval(
@@ -87,24 +87,6 @@ function basculerImages() {
 	);
 
 }
-
-// // const debutURLDefaut = "file:///C:/Users/artus/Documents/Train%20Guy%2053/reseau/";
-// const debutURLDefaut = "https://trainguy53.github.io/reseau/";
-// const imgThumb = document.getElementsByClassName("imgWikipediaThumb");
-// const urlThumb = "https://upload.wikimedia.org/wikipedia/commons/thumb/";
-// const wiki = document.getElementsByClassName("wiki");
-// const urlWiki = "https://fr.wikipedia.org/wiki/";
-
-// function URLWikipedia() {
-
-// 	for (var i = imgThumb.length - 1; i >= 0; i--) {
-// 		imgThumb[i].src = urlThumb + imgThumb[i].src.split(debutURLDefaut)[1];
-// 	}
-// 		for (var i = wiki.length - 1; i >= 0; i--) {
-// 		wiki[i].href = urlWiki + wiki[i].href.split(debutURLDefaut)[1];
-// 	}
-
-// }
 
 // ================================================================================================================= //
 //                                                                                                                   //
