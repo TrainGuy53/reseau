@@ -130,8 +130,7 @@ ul {list-style-type: none;}
 	box-shadow: 0 0;
 }
 
-/*.imgWikipediaThumb {aspect-ratio: 5 / 2;}*/
-.compagnie {font-family: copperplate gothic}
+.compagnie {width: 50%}
 .divNav {padding-bottom: 50%;}
 .imgReseauxSociaux {width: 25%;}
 .spanSeparation {padding-right: 4%;}
