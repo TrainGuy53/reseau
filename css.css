@@ -13,7 +13,6 @@ a {
 	font-style: italic;
 	text-decoration: none;
 }
-
 a:hover {color: #7a49a5;}
 
 body {
@@ -26,6 +25,8 @@ body {
 }
 
 div {position: relative;}
+.divNav {padding-bottom: 50%;}
+.divValidation:hover {cursor: pointer;}
 
 h1 {
 	font-family: serif;
@@ -49,18 +50,25 @@ img {
 	border-radius: 15px;
 	filter: drop-shadow(3px 3px 1px #000000);
 }
-
 #droite img {
 	border-radius: 0;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
 }
-
 #gauche img {
 	border-radius: 0;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
 }
+.imgCircuit, .imgSection, #tgv {filter: drop-shadow(0 0);}
+.imgFond, .imgSection {
+	border-radius: 0;
+	position: absolute;
+	left: 0;
+}
+.imgReseauxSociaux {width: 25%;}
+.imgValidation {border-radius: 0;}
+.imgCompagnie {width: 50%}
 
 li {
 	float: left;
@@ -81,6 +89,7 @@ p {
 }
 
 span {font-family: consolas;}
+.spanSeparation {padding-right: 4%;}
 
 table {
 	background-color: #5a8787;
@@ -96,11 +105,18 @@ td {
 	border-radius: 15px;
 	box-shadow: 1px 1px 1px #000000;
 }
-
 #tableValidation td {
 	border: 0;
 	box-shadow: 0 0;
 	padding: 5%;
+}
+.tdImage {
+	border: 0;
+	box-shadow: 0 0;
+}
+.tdSansBords {
+	border: 0;
+	box-shadow: 0 0;
 }
 
 th {
@@ -109,39 +125,9 @@ th {
 	box-shadow: 1px 1px 1px #000000;
 	background-color: #4974a5;
 }
-
 #reseauxSociaux th {background-color: transparent;}
+
 ul {list-style-type: none;}
-
-/*===================================================================================================================*/
-/*	class = ...*/
-/*===================================================================================================================*/
-
-.imgCircuit, .imgSection, #tgv {filter: drop-shadow(0 0);}
-
-.imgFond, .imgSection {
-	border-radius: 0;
-	position: absolute;
-	left: 0;
-}
-
-.tdImage {
-	border: 0;
-	box-shadow: 0 0;
-}
-
-.compagnie {width: 50%}
-.divNav {padding-bottom: 50%;}
-.imgReseauxSociaux {width: 25%;}
-.spanSeparation {padding-right: 4%;}
-
-.tdSansBords {
-	border: 0;
-	box-shadow: 0 0;
-}
-
-.divValidation:hover {cursor: pointer;}
-.imgValidation {border-radius: 0;}
 
 /*===================================================================================================================*/
 /*	id = ...*/
