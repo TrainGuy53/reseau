@@ -9,6 +9,13 @@
 // ================================================================================================================= //
 
 const titreDeLaPageParent = window.parent.document.title;
+const pages = {
+	"Accueil — Train Guy 53": "index.html",
+	"Locomotives — Train Guy 53": "locomotives.html",
+	"Voitures — Train Guy 53": "voitures.html",
+	"Wagons — Train Guy 53": "wagons.html",
+	"Maquettes — Train Guy 53": "maquettes.html"
+};
 
 // ================================================================================================================= //
 	// fonctions
@@ -29,10 +36,10 @@ function changerLeThemeDeLaPage() {
 		sombre.style.display = "none";
 	}
 	switch (titreDeLaPageParent) {
-		case "Accueil – Train Guy 53":
+		case pages[0]:
 			window.parent.fond.src = "index/tgv/" + themeDeLaPage + ".png";
 			break;
-		case "Locomotives – Train Guy 53":
+		case pages[1]:
 			window.parent.temps.src = "locomotives/temps/" + themeDeLaPage + ".png";
 			break;
 	}
@@ -45,13 +52,6 @@ function changerLeThemeDeLaPage() {
 const urlHtml = "https://validator.w3.org/nu/?doc=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2F";
 const urlCss = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftrainguy53.github.io%2Freseau";
 const urlJs = "https://js.js";
-const pages = {
-	"Accueil – Train Guy 53": "index.html",
-	"Locomotives – Train Guy 53": "locomotives.html",
-	"Voitures – Train Guy 53": "voitures.html",
-	"Wagons – Train Guy 53": "wagons.html",
-	"Maquettes – Train Guy 53": "maquettes.html"
-};
 
 function validation(langage) {
 
