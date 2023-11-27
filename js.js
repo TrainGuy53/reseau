@@ -43,8 +43,8 @@ function changerLeThemeDeLaPage() {
 			window.parent.temps.src = "locomotives/temps/" + themeDeLaPage + ".png";
 			break;
 	}
-	for (var i = document.getElementsByClassName("imgFond").length - 1; i >= 0; i--) {
-		document.getElementsByClassName("imgFond")[i].src = "nav/" + themeDeLaPage + "/" + i + ".png";
+	for (var i = document.getElementsByClassName("img-fond").length - 1; i >= 0; i--) {
+		document.getElementsByClassName("img-fond")[i].src = "nav/" + themeDeLaPage + "/" + i + ".png";
 	}
 
 }

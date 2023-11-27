@@ -4,9 +4,6 @@
 /*                                                                                                                   */
 /*===================================================================================================================*/
 
-/*===================================================================================================================*/
-/*	<...>*/
-/*===================================================================================================================*/
 
 a {
 	color: #000000;
@@ -24,9 +21,24 @@ body {
 	text-align: center;
 }
 
+#button-clair-sombre {
+	font-size: 250%;
+	border: 0;
+	margin: 5%;
+	background-color: transparent;
+}
+#button-clair-sombre:hover {cursor: pointer;}
+
 div {position: relative;}
-.divNav {padding-bottom: 50%;}
-.divValidation:hover {cursor: pointer;}
+.div-nav {padding-bottom: 50%;}
+.div-validation:hover {cursor: pointer;}
+#div-colones {column-count: 2;}
+#div-circuits:hover #img-circuit-détaillé {display: block;}
+#div-tgv {
+	width: 80%;
+	left: -30%;
+	padding-bottom: 10%;
+}
 
 h1 {
 	font-family: serif;
@@ -44,31 +56,45 @@ iframe {
 	border-radius: 20px;
 	z-index: 2;
 }
+#iframe-validation {
+	aspect-ratio: 61 / 10;
+	opacity: 100%;
+	box-shadow: 0 0;
+	float: left;
+}
 
 img {
 	width: 100%;
 	border-radius: 15px;
 	filter: drop-shadow(3px 3px 1px #000000);
 }
-#droite img {
+#div-droite img {
 	border-radius: 0;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
 }
-#gauche img {
+#div-gauche img {
 	border-radius: 0;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
 }
-.imgCircuit, .imgSection, #tgv {filter: drop-shadow(0 0);}
-.imgFond, .imgSection {
+.img-circuit, .img-section, .img-fond, .img-section {
 	border-radius: 0;
 	position: absolute;
 	left: 0;
 }
-.imgReseauxSociaux {width: 25%;}
-.imgValidation {border-radius: 0;}
-.imgCompagnie {width: 50%}
+.img-réseaux-sociaux {width: 25%;}
+.img-validation {border-radius: 0;}
+.img-compagnie {width: 50%}
+#img-fond, #img-tgv {filter: drop-shadow(0 0);}
+#img-tgv {position: absolute;}
+#img-logo {width: 50%;}
+#img-temps {
+	width: 50%;
+	box-shadow: 3px 3px 3px #000000;
+	display: block;
+	margin: auto;
+}
 
 li {
 	float: left;
@@ -89,7 +115,8 @@ p {
 }
 
 span {font-family: consolas;}
-.spanSeparation {padding-right: 4%;}
+.span-séparation {padding-right: 4%;}
+#span-clair {display: none;}
 
 table {
 	background-color: #5a8787;
@@ -99,22 +126,34 @@ table {
 	box-shadow: 3px 3px 3px #000000;
 	width: 100%;
 }
+#table-validation {
+	border: 0;
+	width: 25%;
+	margin: auto;
+	box-shadow: 0 0;
+	background: transparent;
+}
+#table-réseaux-sociaux {
+	border: 0;
+	background-color: transparent;
+	box-shadow: 0 0;
+}
 
 td {
 	border: 1px #4974a5 outset;
 	border-radius: 15px;
 	box-shadow: 1px 1px 1px #000000;
 }
-#tableValidation td {
+#table-validation td {
 	border: 0;
 	box-shadow: 0 0;
 	padding: 5%;
 }
-.tdImage {
+.td-image {
 	border: 0;
 	box-shadow: 0 0;
 }
-.tdSansBords {
+.td-sans-bords {
 	border: 0;
 	box-shadow: 0 0;
 }
@@ -125,63 +164,13 @@ th {
 	box-shadow: 1px 1px 1px #000000;
 	background-color: #4974a5;
 }
-#reseauxSociaux th {background-color: transparent;}
+#table-réseaux-sociaux th {background-color: transparent;}
 
 ul {list-style-type: none;}
 
-/*===================================================================================================================*/
-/*	id = ...*/
-/*===================================================================================================================*/
 
-#circuitDetaile, #circuits:hover #circuitSimple {display: none;}
-#circuits:hover #circuitDetaile {display: block;}
-#clair {display: none;}
+#img-circuit-détaillé, #div-circuits:hover #div-circuit-simple {display: none;}
 
-#clairSombre {
-	font-size: 250%;
-	border: 0;
-	margin: 5%;
-	background-color: transparent;
-}
-
-#clairSombre:hover {cursor: pointer;}
-#colones {column-count: 2;}
-#fond, #tgv {position: absolute;}
-#logo {width: 50%;}
-
-#reseauxSociaux {
-	border: 0;
-	background-color: transparent;
-	box-shadow: 0 0;
-}
-
-#temps {
-	width: 50%;
-	box-shadow: 3px 3px 3px #000000;
-	display: block;
-	margin: auto;
-}
-
-#divTgv {
-	width: 80%;
-	left: -30%;
-	padding-bottom: 10%;
-}
-
-#iframeValidation {
-	aspect-ratio: 61 / 10;
-	opacity: 100%;
-	box-shadow: 0 0;
-	float: left;
-}
-
-#tableValidation {
-	border: 0;
-	width: 25%;
-	margin: auto;
-	box-shadow: 0 0;
-	background: transparent;
-}
 
 /*===================================================================================================================*/
 /*                                                                                                                   */
