@@ -8,7 +8,7 @@
 	// variables
 // ================================================================================================================= //
 
-const titreDeLaPageParent = window.parent.document.title;
+const titrePageParent = window.parent.document.title;
 const pages = {
 	"Accueil — Train Guy 53": "index.html",
 	"Locomotives — Train Guy 53": "locomotives.html",
@@ -21,51 +21,49 @@ const pages = {
 	// fonctions
 // ================================================================================================================= //
 
-var themeDeLaPage = "clair";
+var thème = "clair";
 
-function changerLeThemeDeLaPage() {
+function basculerThème() {
 
-	"use strict";
-	if (themeDeLaPage === "sombre") {
-		themeDeLaPage = "clair";
-		clair.style.display = "none";
-		sombre.style.display = "block";
+	if (thème === "sombre") {
+		thème = "clair";
+		getElementById("span-clair").style.display = "none";
+		getElementById("span-sombre").style.display = "block";
 	} else {
-		themeDeLaPage = "sombre";
-		clair.style.display = "block";
-		sombre.style.display = "none";
+		thème = "sombre";
+		getElementById("span-clair").style.display = "block";
+		getElementById("span-sombre").style.display = "none";
 	}
-	switch (titreDeLaPageParent) {
+	switch (titrePageParent) {
 		case pages[0]:
-			window.parent.fond.src = "index/tgv/" + themeDeLaPage + ".png";
+			window.parent.fond.src = "index/tgv/" + thème + ".png";
 			break;
 		case pages[1]:
-			window.parent.temps.src = "locomotives/temps/" + themeDeLaPage + ".png";
+			window.parent.temps.src = "locomotives/temps/" + thème + ".png";
 			break;
 	}
 	for (var i = document.getElementsByClassName("img-fond").length - 1; i >= 0; i--) {
-		document.getElementsByClassName("img-fond")[i].src = "nav/" + themeDeLaPage + "/" + i + ".png";
+		document.getElementsByClassName("img-fond")[i].src = "nav/" + thème + "/" + i + ".png";
 	}
 
 }
 
 const urlHtml = "https://validator.w3.org/nu/?doc=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2F";
 const urlCss = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftrainguy53.github.io%2Freseau";
-const urlJs = "https://js.js";
+// const urlJs = "https://";
 
 function validation(langage) {
 
-	"use strict";
 	switch (langage) {
 		case "html":
-			if (titreDeLaPageParent in pages) {window.open(urlHtml + pages[titreDeLaPageParent], "_blank")}
+			if (titrePageParent in pages) {window.open(urlHtml + pages[titrePageParent], "_blank")}
 			break;
 		case "css":
 			window.open(urlCss, "_blank");
 			break;
-		case "js":
-			window.open(urlJs, "_blank");
-			break;
+		// case "js":
+		// 	window.open(urlJs, "_blank");
+		// 	break;
 	}
 
 }
@@ -74,14 +72,14 @@ const pause = 3000; // milisecondes
 
 function basculerImages() {
 
-	const imgReseau = document.querySelectorAll(".imgReseau");
-	const imgWikipediaThumb = document.querySelectorAll(".imgWikipediaThumb");
-	imgReseau.forEach(img => img.style.display = "block");
-	imgWikipediaThumb.forEach(img => img.style.display = "none");
+	const imgRéseau = document.querySelectorAll(".img-réseau");
+	const imgWikipédia = document.querySelectorAll(".img-wikipédia");
+	imgRéseau.forEach(img => img.style.display = "block");
+	imgWikipédia.forEach(img => img.style.display = "none");
 	setInterval(
 		() => {
-			imgReseau.forEach(img => img.style.display = img.style.display === "none" ? "block" : "none");
-			imgWikipediaThumb.forEach(img => img.style.display = img.style.display === "none" ? "block" : "none");
+			imgRéseau.forEach(img => img.style.display = img.style.display === "none" ? "block" : "none");
+			imgWikipédia.forEach(img => img.style.display = img.style.display === "none" ? "block" : "none");
 		},
 		pause
 	);

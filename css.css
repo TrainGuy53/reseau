@@ -78,7 +78,8 @@ img {
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
 }
-.img-circuit, .img-section, .img-fond, .img-section {
+.img-circuit, .img-section, #img-tgv {filter: drop-shadow(0 0);}
+.img-fond, .img-section {
 	border-radius: 0;
 	position: absolute;
 	left: 0;
@@ -86,8 +87,7 @@ img {
 .img-réseaux-sociaux {width: 25%;}
 .img-validation {border-radius: 0;}
 .img-compagnie {width: 50%}
-#img-fond, #img-tgv {filter: drop-shadow(0 0);}
-#img-tgv {position: absolute;}
+#img-fond, #img-tgv {position: absolute;}
 #img-logo {width: 50%;}
 #img-temps {
 	width: 50%;
