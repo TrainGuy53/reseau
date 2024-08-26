@@ -16,18 +16,10 @@ body {
 	background: #5a8787 url(commun/rail.png) repeat-y left top;
 	margin: 5%;
 	text-shadow: 1px 1px 1px #ffffff;
-	font-family: bahnschrift;
+	font-family: Cambria;
 	font-size: 200%;
 	text-align: center;
 }
-
-#button-clair-sombre {
-	font-size: 250%;
-	border: 0;
-	margin: 5%;
-	background-color: transparent;
-}
-#button-clair-sombre:hover {cursor: pointer;}
 
 div {position: relative;}
 .div-nav {padding-bottom: 50%;}
@@ -40,10 +32,7 @@ div {position: relative;}
 	padding-bottom: 10%;
 }
 
-h1 {
-	font-family: serif;
-	text-shadow: 2px 2px 2px #ffffff;
-}
+h1 {text-shadow: 2px 2px 2px #ffffff;}
 
 iframe {
 	border: 0;
@@ -84,9 +73,9 @@ img {
 	position: absolute;
 	left: 0;
 }
+.img-compagnie {width: 50%}
 .img-réseaux-sociaux {width: 25%;}
 .img-validation {border-radius: 0;}
-.img-compagnie {width: 50%}
 #img-fond, #img-tgv {position: absolute;}
 #img-logo {width: 50%;}
 #img-temps {
@@ -114,9 +103,7 @@ p {
 	padding: 1%;
 }
 
-span {font-family: consolas;}
 .span-séparation {padding-right: 4%;}
-#span-clair {display: none;}
 
 table {
 	background-color: #5a8787;
