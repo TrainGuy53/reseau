@@ -4,9 +4,6 @@
 //                                                                                                                   //
 // ================================================================================================================= //
 
-// ================================================================================================================= //
-	// variables
-// ================================================================================================================= //
 
 const titrePageParent = window.parent.document.title;
 const pages = {
@@ -17,10 +14,6 @@ const pages = {
 	"Maquettes — Train Guy 53": "maquettes.html",
 	"Rails — Train Guy 53": "rails.html"
 };
-
-// ================================================================================================================= //
-	// fonctions
-// ================================================================================================================= //
 
 const urlHtml = "https://validator.w3.org/nu/?doc=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2F";
 const urlCss = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftrainguy53.github.io%2Freseau";
@@ -42,9 +35,9 @@ function validation(langage) {
 
 }
 
-// const pause = 3000; // milisecondes
+const pause = 3000; // milisecondes
 
-// function basculerImages() {
+function basculerImages() {
 
 // 	const imgRéseau = document.querySelectorAll(".img-réseau");
 // 	const imgInternet = document.querySelectorAll(".img-internet");
@@ -58,7 +51,7 @@ function validation(langage) {
 // 		pause
 // 	);
 
-// }
+}
 
 // ================================================================================================================= //
 //                                                                                                                   //
