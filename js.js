@@ -14,7 +14,7 @@ const pages = {
 	"Locomotives — Train Guy 53": "locomotives.html",
 	"Voitures — Train Guy 53": "voitures.html",
 	"Wagons — Train Guy 53": "wagons.html",
-	"Maquettes — Train Guy 53": "maquettes.html"
+	"Maquettes — Train Guy 53": "maquettes.html",
 	"Rails — Train Guy 53": "rails.html"
 };
 

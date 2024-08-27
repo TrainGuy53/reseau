@@ -30,13 +30,14 @@ div {position: relative;}
 	width: 80%;
 	left: -30%;
 	padding-bottom: 10%;
+	border-radius: 25px;
 }
 
 h1 {text-shadow: 2px 2px 2px #ffffff;}
 
 iframe {
 	border: 0;
-	width: 95%;
+	width: 100%;
 	position: sticky;
 	top: 0;
 	aspect-ratio: 110 / 10;
@@ -54,33 +55,36 @@ iframe {
 
 img {
 	width: 100%;
-	border-radius: 15px;
 	filter: drop-shadow(3px 3px 1px #000000);
 }
 #div-droite img {
-	border-radius: 0;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
 }
 #div-gauche img {
-	border-radius: 0;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
 }
-.img-circuit, .img-section, #img-tgv {filter: drop-shadow(0 0);}
-.img-fond, .img-section {
-	border-radius: 0;
+.img-circuit,
+.img-section,
+#img-tgv {filter: drop-shadow(0 0);}
+.img-fond,
+.img-section {
 	position: absolute;
 	left: 0;
 }
-.img-compagnie {width: 50%}
+.img-compagnie {width: 50%;}
 .img-réseaux-sociaux {width: 25%;}
-.img-validation {border-radius: 0;}
-#img-fond, #img-tgv {position: absolute;}
+#img-tgv,
+#img-tgv-fond {
+	border-radius: 15px;
+	position: absolute;
+}
 #img-logo {width: 50%;}
 #img-temps {
 	width: 50%;
 	box-shadow: 3px 3px 3px #000000;
+	border-radius: 25px;
 	display: block;
 	margin: auto;
 }
@@ -156,7 +160,8 @@ th {
 ul {list-style-type: none;}
 
 
-#img-circuit-détaillé, #div-circuits:hover #div-circuit-simple {display: none;}
+#img-circuit-détaillé,
+#div-circuits:hover #div-circuit-simple {display: none;}
 
 
 /*===================================================================================================================*/
