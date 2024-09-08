@@ -17,7 +17,6 @@ const pages = {
 
 const urlHtml = "https://validator.w3.org/nu/?doc=https%3A%2F%2Ftrainguy53.github.io%2Freseau%2F";
 const urlCss = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftrainguy53.github.io%2Freseau";
-// const urlJs = "https://";
 
 function validation(langage) {
 
@@ -28,28 +27,23 @@ function validation(langage) {
 		case "css":
 			window.open(urlCss, "_blank");
 			break;
-		// case "js":
-		// 	window.open(urlJs, "_blank");
-		// 	break;
 	}
 
 }
 
-const pause = 3000; // milisecondes
+function cacherImagesInternet() {
+
+	const imgInternet = document.querySelectorAll(".img-internet");
+	imgInternet.forEach(img => img.style.display = "none");
+
+}
 
 function basculerImages() {
 
-// 	const imgRéseau = document.querySelectorAll(".img-réseau");
-// 	const imgInternet = document.querySelectorAll(".img-internet");
-// 	imgRéseau.forEach(img => img.style.display = "block");
-// 	imgInternet.forEach(img => img.style.display = "none");
-// 	setInterval(
-// 		() => {
-// 			imgRéseau.forEach(img => img.style.display = img.style.display === "none" ? "block" : "none");
-// 			imgInternet.forEach(img => img.style.display = img.style.display === "none" ? "block" : "none");
-// 		},
-// 		pause
-// 	);
+	const imgInternet = document.querySelectorAll(".img-internet");
+	const imgRéseau = document.querySelectorAll(".img-réseau");
+	imgRéseau.forEach(img => img.style.display = img.style.display === "none" ? "block" : "none");
+	imgInternet.forEach(img => img.style.display = img.style.display === "none" ? "block" : "none");
 
 }
 

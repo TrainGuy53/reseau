@@ -16,10 +16,20 @@ body {
 	background: #5a8787 url(commun/rail.png) repeat-y left top;
 	margin: 5%;
 	text-shadow: 1px 1px 1px #ffffff;
-	font-family: Cambria;
+	font-family: cambria;
 	font-size: 200%;
 	text-align: center;
 }
+
+button {
+	background-color: #4974a5;
+	text-shadow: 1px 1px 1px #ffffff;
+	font-family: cambria;
+	font-size: 125%;
+	text-align: center;
+	border-radius: 20px;
+}
+button:hover {cursor: pointer;}
 
 div {position: relative;}
 .nav {padding-bottom: 50%;}
